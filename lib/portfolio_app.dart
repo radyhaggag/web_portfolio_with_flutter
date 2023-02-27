@@ -10,12 +10,8 @@ class PortfolioApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      themeMode: ThemeMode.dark,
-      darkTheme: CustomTheme.darkTheme(),
+      theme: CustomTheme.darkTheme(),
       title: 'Portfolio',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
       home: const HomeView(),
     );
   }
