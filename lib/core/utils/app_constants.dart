@@ -1,1 +1,3 @@
-abstract class AppConstants {}
+abstract class AppConstants {
+  static const double appBarHeight = 80;
+}

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/core/utils/app_constants.dart';
 
 import '../../../core/utils/app_colors.dart';
+import '../../../core/utils/app_enums.dart';
 import '../../../core/utils/app_extensions.dart';
 import 'custom_menu_btn.dart';
 import 'developer_name_btn.dart';
@@ -10,7 +12,7 @@ class HomeAppBar extends StatelessWidget with PreferredSizeWidget {
   const HomeAppBar({super.key});
 
   @override
-  Size get preferredSize => const Size.fromHeight(80);
+  Size get preferredSize => const Size.fromHeight(AppConstants.appBarHeight);
 
   @override
   Widget build(BuildContext context) {
@@ -32,10 +34,10 @@ class HomeAppBar extends StatelessWidget with PreferredSizeWidget {
   }
 
   double _getHorizontalPadding(BuildContext context) {
-    if (context.width < 768) {
+    if (context.width < DeviceType.ipad.getMaxWidth()) {
       return context.width * .03;
     } else {
-      return context.width * .06;
+      return context.width * .08;
     }
   }
 }
