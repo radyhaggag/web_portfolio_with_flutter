@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/core/utils/app_colors.dart';
+
+import 'app_colors.dart';
 
 abstract class AppStyles {
   static TextStyle s28 = TextStyle(

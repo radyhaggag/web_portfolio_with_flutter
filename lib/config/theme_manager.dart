@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/core/utils/app_colors.dart';
+import '../core/utils/app_colors.dart';
 
 abstract class CustomTheme {
   static ThemeData lightTheme() => ThemeData.light();

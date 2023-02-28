@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/config/theme_manager.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
+import 'config/theme_manager.dart';
+import 'presentation/blocs/home_bloc/home_bloc.dart';
 import 'presentation/views/home_view.dart';
 
 class PortfolioApp extends StatelessWidget {
@@ -12,7 +14,10 @@ class PortfolioApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: CustomTheme.darkTheme(),
       title: 'Portfolio',
-      home: const HomeView(),
+      home: BlocProvider<HomeBloc>(
+        create: (context) => HomeBloc(),
+        child: const HomeView(),
+      ),
     );
   }
 }
