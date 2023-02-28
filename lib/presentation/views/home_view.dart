@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../widgets/home_body.dart';
+import '../widgets/body/home_body.dart';
 import '../widgets/app_bar/home_app_bar.dart';
 
 class HomeView extends StatelessWidget {

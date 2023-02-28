@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'app_bar/vertical_headers_builder.dart';
+import '../app_bar/vertical_headers_builder.dart';
 
 class HomeBody extends StatelessWidget {
   const HomeBody({super.key});
