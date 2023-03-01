@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/core/utils/app_extensions.dart';
+import '../../../../core/utils/app_extensions.dart';
 
 import '../../../../core/utils/app_enums.dart';
 import '../../../../core/utils/app_strings.dart';
@@ -37,8 +37,8 @@ class IntroText extends StatelessWidget {
         const SizedBox(height: 12),
         SizedBox(
           width: context.width < DeviceType.mobile.getMaxWidth()
-              ? context.width
-              : context.width / 2,
+              ? context.width - 20
+              : context.width / 2.5,
           child: Text(
             AppStrings.introMsg,
             style: context.width < DeviceType.ipad.getMaxWidth()

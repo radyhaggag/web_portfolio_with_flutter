@@ -10,9 +10,8 @@ class IntroSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: context.height - AppConstants.appBarHeight,
-      width: context.width,
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: AppConstants.appBarHeight),
       child: context.width < DeviceType.mobile.getMaxWidth()
           ? Column(
               crossAxisAlignment: CrossAxisAlignment.center,

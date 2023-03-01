@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/core/utils/app_enums.dart';
-import 'package:portfolio/core/utils/app_extensions.dart';
+import '../../../core/utils/app_enums.dart';
+import '../../../core/utils/app_extensions.dart';
 import 'package:universal_html/html.dart' as html;
 
 import '../../../core/utils/app_strings.dart';

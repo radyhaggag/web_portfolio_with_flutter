@@ -11,17 +11,20 @@ class CustomMenuBtn extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocBuilder<HomeBloc, HomeState>(
       builder: (context, state) {
-        return AnimatedCrossFade(
-          crossFadeState: _getCrossFadeState(context),
-          firstChild: TextButton(
-            onPressed: () => _menuBtnClicked(context),
-            child: const Icon(Icons.menu),
+        return SizedBox(
+          width: 40,
+          child: AnimatedCrossFade(
+            crossFadeState: _getCrossFadeState(context),
+            firstChild: TextButton(
+              onPressed: () => _menuBtnClicked(context),
+              child: const Icon(Icons.menu),
+            ),
+            secondChild: TextButton(
+              onPressed: () => _closeBtnClicked(context),
+              child: const Icon(Icons.close),
+            ),
+            duration: const Duration(milliseconds: 200),
           ),
-          secondChild: TextButton(
-            onPressed: () => _closeBtnClicked(context),
-            child: const Icon(Icons.close),
-          ),
-          duration: const Duration(milliseconds: 200),
         );
       },
     );
