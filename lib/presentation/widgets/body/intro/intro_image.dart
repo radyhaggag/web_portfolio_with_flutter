@@ -11,10 +11,11 @@ class IntroImage extends StatelessWidget {
   Widget build(BuildContext context) {
     final responsiveSize = ResponsiveSize(
       deviceWidth: context.width,
-      ipadSize: 250,
-      smallScreenSize: 310,
-      largeScreenSize: 440,
+      mobileSize: context.width * .55,
+      ipadSize: context.width * .36,
+      smallScreenSize: context.width * .28,
     );
+
     return Align(
       alignment: Alignment.topCenter,
       child: Image.asset(

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/core/utils/app_colors.dart';
+import 'package:portfolio/core/utils/app_enums.dart';
 import 'package:portfolio/core/utils/app_extensions.dart';
 import 'package:universal_html/html.dart' as html;
 
@@ -17,11 +17,17 @@ class DeveloperNameBtn extends StatelessWidget {
       },
       child: Padding(
         padding: const EdgeInsets.symmetric(vertical: 13),
-        child: Text(
-          AppStrings.developerName,
-          style: context.width > 768
-              ? AppStyles.s28
-              : AppStyles.s24.copyWith(color: AppColors.primaryColor),
+        child: SizedBox(
+          width: context.width < DeviceType.ipad.getMaxWidth()
+              ? context.width * .5
+              : context.width * .2,
+          child: FittedBox(
+            alignment: Alignment.topLeft,
+            child: Text(
+              AppStrings.developerName,
+              style: AppStyles.s28,
+            ),
+          ),
         ),
       ),
     );

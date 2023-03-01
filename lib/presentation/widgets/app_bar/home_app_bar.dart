@@ -25,9 +25,9 @@ class HomeAppBar extends StatelessWidget with PreferredSizeWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           const DeveloperNameBtn(),
-          (context.width > 768)
+          context.width > DeviceType.ipad.getMaxWidth()
               ? const HorizontalHeaders()
-              : const CustomMenuBtn(),
+              : const CustomMenuBtn()
         ],
       ),
     );
