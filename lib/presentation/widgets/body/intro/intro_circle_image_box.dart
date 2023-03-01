@@ -12,9 +12,9 @@ class IntroCircleImageBox extends StatelessWidget {
   Widget build(BuildContext context) {
     final responsiveSize = ResponsiveSize(
       deviceWidth: context.width,
-      mobileSize: context.width * .7,
-      ipadSize: context.width * .44,
-      smallScreenSize: context.width * .36,
+      mobileSize: context.width * .78,
+      ipadSize: context.width * .50,
+      smallScreenSize: context.width * .37,
     );
     return SizedBox(
       height: responsiveSize.getSize(),

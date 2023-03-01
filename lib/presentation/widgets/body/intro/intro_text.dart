@@ -15,7 +15,6 @@ class IntroText extends StatelessWidget {
       crossAxisAlignment: context.width < DeviceType.mobile.getMaxWidth()
           ? CrossAxisAlignment.center
           : CrossAxisAlignment.start,
-      mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Text(
           AppStrings.helloIM,
@@ -48,6 +47,7 @@ class IntroText extends StatelessWidget {
             softWrap: true,
           ),
         ),
+        const SizedBox(height: 30),
         const IntoActions(),
       ],
     );

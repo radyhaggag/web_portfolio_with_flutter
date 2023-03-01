@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../../../../core/utils/app_constants.dart';
 import '../../../../core/utils/app_enums.dart';
 import '../../../../core/utils/app_extensions.dart';
 import 'intro_circle_image_box.dart';
@@ -11,7 +10,7 @@ class IntroSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: AppConstants.appBarHeight),
+      padding: EdgeInsets.symmetric(vertical: context.height * .12),
       child: context.width < DeviceType.mobile.getMaxWidth()
           ? Column(
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -24,6 +23,7 @@ class IntroSection extends StatelessWidget {
             )
           : Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: const [
                 IntroText(),
                 IntroCircleImageBox(),

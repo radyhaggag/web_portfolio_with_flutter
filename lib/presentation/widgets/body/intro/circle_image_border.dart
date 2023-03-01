@@ -13,17 +13,14 @@ class CircleImageBorder extends StatelessWidget {
       deviceWidth: context.width,
       mobileSize: context.width * .62,
       ipadSize: context.width * .4,
-      smallScreenSize: context.width * .32,
+      smallScreenSize: context.width * .29,
     );
-    return Align(
-      alignment: Alignment.bottomCenter,
-      child: Container(
-        width: responsiveSize.getSize(),
-        height: responsiveSize.getSize(),
-        decoration: BoxDecoration(
-          color: AppColors.primaryColor,
-          shape: BoxShape.circle,
-        ),
+    return Container(
+      width: responsiveSize.getSize(),
+      height: responsiveSize.getSize(),
+      decoration: BoxDecoration(
+        color: AppColors.primaryColor,
+        shape: BoxShape.circle,
       ),
     );
   }

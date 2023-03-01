@@ -29,17 +29,14 @@ class IntoActions extends StatelessWidget {
         width: 160,
       ),
     ];
-    return Padding(
-      padding: const EdgeInsets.only(top: 30),
-      child: context.width < DeviceType.ipad.getMaxWidth()
-          ? Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: actions,
-            )
-          : Row(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: actions,
-            ),
-    );
+    return context.width < DeviceType.ipad.getMaxWidth()
+        ? Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: actions,
+          )
+        : Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: actions,
+          );
   }
 }
