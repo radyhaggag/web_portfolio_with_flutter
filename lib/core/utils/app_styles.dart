@@ -9,7 +9,7 @@ abstract class AppStyles {
     fontWeight: FontWeight.w600,
   );
   static TextStyle s32 = TextStyle(
-    color: AppColors.white,
+    color: AppColors.primaryColor,
     fontSize: 32,
     fontWeight: FontWeight.w600,
   );

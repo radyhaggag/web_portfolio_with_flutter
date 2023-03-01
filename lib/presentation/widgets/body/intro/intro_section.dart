@@ -22,7 +22,7 @@ class IntroSection extends StatelessWidget {
               ],
             )
           : Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: const [
                 IntroText(),
