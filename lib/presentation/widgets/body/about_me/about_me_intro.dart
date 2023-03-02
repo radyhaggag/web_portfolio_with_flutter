@@ -5,8 +5,8 @@ import '../../../../core/utils/app_enums.dart';
 import '../../../../core/utils/app_strings.dart';
 import '../../../../core/utils/app_styles.dart';
 
-class AboutMeMsg extends StatelessWidget {
-  const AboutMeMsg({super.key});
+class AboutMeIntro extends StatelessWidget {
+  const AboutMeIntro({super.key});
 
   @override
   Widget build(BuildContext context) {

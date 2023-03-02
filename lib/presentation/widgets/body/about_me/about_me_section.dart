@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../../core/utils/app_colors.dart';
 import '../../../../core/utils/app_extensions.dart';
 import '../../../../core/widgets/custom_divider.dart';
-import 'about_me_msg.dart';
+import 'about_me_intro.dart';
 import 'basic_services_grid.dart';
 import 'detailed_services_section.dart';
 import 'experience_info.dart';
@@ -14,11 +14,11 @@ class AboutMeSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(bottom: context.width * .12),
+      padding: const EdgeInsets.only(bottom: 80),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const AboutMeMsg(),
+          const AboutMeIntro(),
           const SizedBox(height: 8),
           Center(
             child: CustomDivider(
