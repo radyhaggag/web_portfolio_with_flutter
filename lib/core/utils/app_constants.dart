@@ -14,7 +14,8 @@ abstract class AppConstants {
     CustomService(
       service: 'UI & UX DESIGNING',
       logo: AppAssets.uiDesignLogo,
-      description: 'I design beautiful web iterfaces with Figma and Adove XD',
+      description:
+          'I design beautiful web interfaces with Figma and Adobe XD. I design beautiful web interfaces with Figma and Adobe XD.',
     ),
     CustomService(
       service: 'WEB SCRAPING',

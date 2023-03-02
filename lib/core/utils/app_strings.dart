@@ -8,4 +8,5 @@ abstract class AppStrings {
   static const String numOfExperience = '2+';
   static const String experienceMsg =
       'Years of experience, Specialized in building apps, while ensuring a seamless web experience for end users.';
+  static const String servicesIOffer = 'The services i offer:';
 }

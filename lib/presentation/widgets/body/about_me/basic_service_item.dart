@@ -1,8 +1,9 @@
-import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 import '../../../../core/utils/app_colors.dart';
+import '../../../../core/utils/app_enums.dart';
+import '../../../../core/utils/app_extensions.dart';
 import '../../../../core/utils/app_styles.dart';
 import '../../../../data/models/custom_service.dart';
 
@@ -21,7 +22,7 @@ class _BasicServiceItemState extends State<BasicServiceItem> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(24),
+      padding: const EdgeInsets.all(10),
       color: itemColor,
       child: MouseRegion(
         onEnter: _onEnter,
@@ -35,14 +36,15 @@ class _BasicServiceItemState extends State<BasicServiceItem> {
               height: 48,
             ),
             const SizedBox(height: 16),
-            Flexible(
-              child: AutoSizeText(
-                widget.service.service,
-                style: AppStyles.s24,
-                minFontSize: 8,
-                textAlign: TextAlign.center,
+            if (context.width > DeviceType.mobile.getMinWidth())
+              FittedBox(
+                child: Text(
+                  widget.service.service,
+                  style: AppStyles.s24,
+                  // minFontSize: 8,
+                  textAlign: TextAlign.center,
+                ),
               ),
-            ),
           ],
         ),
       ),

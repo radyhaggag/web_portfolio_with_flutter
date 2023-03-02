@@ -13,9 +13,11 @@ class AboutMeMsg extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          AppBarHeaders.aboutMe.getString(),
-          style: AppStyles.s32,
+        FittedBox(
+          child: Text(
+            AppBarHeaders.aboutMe.getString(),
+            style: AppStyles.s32,
+          ),
         ),
         const SizedBox(height: 8),
         Text(
