@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import '../../../core/utils/app_extensions.dart';
 
+import '../../../core/utils/app_extensions.dart';
 import '../app_bar/vertical_headers_builder.dart';
 import 'about_me/about_me_section.dart';
 import 'intro/intro_section.dart';
+import 'projects/projects_section.dart';
 
 class HomeBody extends StatelessWidget {
   const HomeBody({super.key});
@@ -18,6 +19,7 @@ class HomeBody extends StatelessWidget {
             children: const [
               IntroSection(),
               AboutMeSection(),
+              ProjectsSection(),
             ],
           ),
           const VerticalHeadersBuilder(),
