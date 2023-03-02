@@ -1,4 +1,4 @@
-import 'package:portfolio/core/utils/app_assets.dart';
+import 'app_assets.dart';
 
 import '../../data/models/custom_service.dart';
 

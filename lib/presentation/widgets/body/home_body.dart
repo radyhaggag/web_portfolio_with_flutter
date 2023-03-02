@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/core/utils/app_extensions.dart';
+import '../../../core/utils/app_extensions.dart';
 
 import '../app_bar/vertical_headers_builder.dart';
 import 'about_me/about_me_section.dart';

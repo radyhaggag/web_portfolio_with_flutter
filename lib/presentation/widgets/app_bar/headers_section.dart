@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import '../../../core/utils/app_extensions.dart';
-import 'horizontal_headers.dart';
 
+import '../../../core/utils/app_extensions.dart';
 import 'custom_menu_btn.dart';
+import 'horizontal_headers.dart';
 
 class HeadersSection extends StatelessWidget {
   const HeadersSection({super.key});
