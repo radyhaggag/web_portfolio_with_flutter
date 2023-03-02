@@ -37,15 +37,14 @@ class _BasicServiceItemState extends State<BasicServiceItem> {
               height: 48,
             ),
             const SizedBox(height: 16),
-            if (context.width > DeviceType.mobile.getMinWidth())
-              Flexible(
-                child: AutoSizeText(
-                  widget.service.service,
-                  style: AppStyles.s24,
-                  maxLines: 2,
-                  textAlign: TextAlign.center,
-                ),
+            Flexible(
+              child: AutoSizeText(
+                widget.service.service,
+                style: AppStyles.s24,
+                minFontSize: 8,
+                textAlign: TextAlign.center,
               ),
+            ),
           ],
         ),
       ),
