@@ -12,4 +12,6 @@ abstract class AppStrings {
   static const String featuredProjects = 'Featured projects';
   static const String projectsMsg =
       "I have completed many projects that prove my ability to provide creative and high-quality solutions and finish them in an almost complete way with a great user experience without any problems facing users.";
+  static const String contactMsg =
+      "For any service and work you can contact with us by send an email or by our social media accounts.";
 }
