@@ -11,20 +11,20 @@ class HomeBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.symmetric(horizontal: context.width * .08),
-      child: Stack(
-        children: [
-          ListView(
+    return Stack(
+      children: [
+        Padding(
+          padding: EdgeInsets.symmetric(horizontal: context.width * .08),
+          child: ListView(
             children: const [
               IntroSection(),
               AboutMeSection(),
               ProjectsSection(),
             ],
           ),
-          const VerticalHeadersBuilder(),
-        ],
-      ),
+        ),
+        const VerticalHeadersBuilder(),
+      ],
     );
   }
 }

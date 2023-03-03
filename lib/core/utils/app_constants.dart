@@ -29,7 +29,7 @@ abstract class AppConstants {
     Project(
       name: 'Live score',
       imageUrl:
-          'https://drive.google.com/uc?id=1FpRZzlIWTRbFp62kE7cBhgsuUiAj8fMw',
+          'https://drive.google.com/uc?id=1ITN6reINiIaM-6j3QqxrwtvADZgLNvwB',
       description:
           'A football application to display all related matches and rankings in all international and local tournaments',
     ),
@@ -43,20 +43,20 @@ abstract class AppConstants {
     Project(
       name: 'TikTok Downloader',
       imageUrl:
-          'https://drive.google.com/uc?id=1v8cdp6KiOJPnRYmcFRHxxE_4eANXph_y',
+          'https://drive.google.com/uc?id=1SypuIPVdokg0O4DYoYdswRowlIJAGgIq',
       description:
           'An application for download videos from tiktok and save it to gallery.',
     ),
     Project(
       name: 'Bookly',
       imageUrl:
-          'https://drive.google.com/uc?id=1ZvR88ixwlu8M_xxSt6bQA7reY74b_r5L',
+          'https://drive.google.com/uc?id=1yQtoq-wjVejWPXRI7gzGMXPUZrRob8kY',
       description: 'An application to explore books and view their details.',
     ),
     Project(
       name: 'Image processing',
       imageUrl:
-          'https://drive.google.com/uc?id=1eMIZKFCSJyp3aTV9XMJZzpfCxQy2W2Rf',
+          'https://drive.google.com/uc?id=1hd7U3HgoDqXEi9eDKYjrY9iqlWa6qt8E',
       description:
           'An Desktop program for process images and apply some filters to them.',
     ),

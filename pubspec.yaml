@@ -11,11 +11,13 @@ environment:
 
 dependencies:
   auto_size_text: ^3.0.0
+  cached_network_image: ^3.2.3
   cupertino_icons: ^1.0.2
   flutter:
     sdk: flutter
   flutter_bloc: ^8.1.2
   flutter_svg: ^2.0.2
+  shimmer: ^2.0.0
   universal_html: ^2.0.9
 
 dev_dependencies:

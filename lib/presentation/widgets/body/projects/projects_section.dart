@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/presentation/widgets/body/projects/projects_grid.dart';
 
 import 'projects_intro.dart';
 
@@ -13,6 +14,8 @@ class ProjectsSection extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: const [
           ProjectsIntro(),
+          SizedBox(height: 52),
+          ProjectsGrid(),
         ],
       ),
     );

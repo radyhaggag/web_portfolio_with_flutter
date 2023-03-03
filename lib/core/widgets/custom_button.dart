@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 
 import '../utils/app_colors.dart';
@@ -28,20 +29,33 @@ class CustomButton extends StatelessWidget {
     return SizedBox(
       height: height ?? 48,
       width: width,
-      child: OutlinedButton.icon(
+      child: OutlinedButton(
         onPressed: onPressed,
         style: ElevatedButton.styleFrom(
           side: borderColor == null ? null : BorderSide(color: borderColor!),
           backgroundColor: backgroundColor,
         ),
-        label: Text(
-          label,
-          style: AppStyles.s16,
-        ),
-        icon: Icon(
-          icon,
-          size: 18,
-          color: AppColors.white,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Flexible(
+              child: AutoSizeText(
+                label,
+                style: AppStyles.s16,
+                textAlign: TextAlign.center,
+                minFontSize: 8,
+                maxLines: 1,
+              ),
+            ),
+            if (icon != null) ...[
+              const SizedBox(width: 5),
+              Icon(
+                icon,
+                size: 18,
+                color: AppColors.white,
+              ),
+            ]
+          ],
         ),
       ),
     );
