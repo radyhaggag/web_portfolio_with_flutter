@@ -1,5 +1,7 @@
-import 'package:flutter/widgets.dart';
-import 'package:portfolio/presentation/widgets/body/contact/contact_intro.dart';
+import 'package:flutter/material.dart';
+
+import 'contact_intro.dart';
+import 'contact_form.dart';
 
 class ContactSection extends StatelessWidget {
   const ContactSection({super.key});
@@ -12,6 +14,8 @@ class ContactSection extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: const [
           ContactIntro(),
+          SizedBox(height: 32),
+          ContactForm(),
         ],
       ),
     );
