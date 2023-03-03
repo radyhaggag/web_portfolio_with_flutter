@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/presentation/widgets/body/projects/projects_grid.dart';
 
+import 'projects_grid.dart';
 import 'projects_intro.dart';
 
 class ProjectsSection extends StatelessWidget {

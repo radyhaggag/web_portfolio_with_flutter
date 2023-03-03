@@ -1,10 +1,10 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import '../../../../core/utils/app_enums.dart';
-import '../../../../core/utils/app_extensions.dart';
 
 import '../../../../core/utils/app_colors.dart';
+import '../../../../core/utils/app_enums.dart';
+import '../../../../core/utils/app_extensions.dart';
 import '../../../../core/utils/app_styles.dart';
 import '../../../../data/models/custom_service.dart';
 

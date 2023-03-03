@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:flutter/material.dart';
 
 class ProjectImage extends StatelessWidget {
   const ProjectImage({super.key, required this.imageUrl});
