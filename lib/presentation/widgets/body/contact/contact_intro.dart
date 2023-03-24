@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/presentation/widgets/body/contact/social_medial_icons.dart';
 
-import '../../../../core/utils/app_enums.dart';
-import '../../../../core/utils/app_extensions.dart';
 import '../../../../core/utils/app_strings.dart';
 import '../../../../core/utils/app_styles.dart';
 
@@ -15,7 +14,7 @@ class ContactIntro extends StatelessWidget {
       children: [
         FittedBox(
           child: Text(
-            AppBarHeaders.contact.getString(),
+            AppStrings.contactWithMe,
             style: AppStyles.s32,
           ),
         ),
@@ -25,6 +24,8 @@ class ContactIntro extends StatelessWidget {
           style: AppStyles.s18,
           softWrap: true,
         ),
+        const SizedBox(height: 8),
+        const SocialMediaIcons(),
       ],
     );
   }

@@ -41,50 +41,47 @@ class _ContactFormState extends State<ContactForm> {
 
   @override
   Widget build(BuildContext context) {
-    return Align(
-      alignment: Alignment.centerRight,
-      child: SizedBox(
-        width: _getFormWidth(context.width),
-        child: Form(
-          key: _formKey,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              TextFormField(
-                controller: _nameController,
-                style: AppStyles.s14,
-                decoration: const InputDecoration(labelText: 'Name'),
+    return SizedBox(
+      width: _getFormWidth(context.width),
+      child: Form(
+        key: _formKey,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            TextFormField(
+              controller: _nameController,
+              style: AppStyles.s14,
+              decoration: const InputDecoration(labelText: 'Name'),
+            ),
+            const SizedBox(height: 12),
+            TextFormField(
+              controller: _emailController,
+              style: AppStyles.s14,
+              decoration: const InputDecoration(labelText: 'E-mail'),
+            ),
+            const SizedBox(height: 12),
+            TextFormField(
+              controller: _subjectController,
+              style: AppStyles.s14,
+              decoration: const InputDecoration(labelText: 'Subject'),
+            ),
+            const SizedBox(height: 12),
+            TextField(
+              controller: _messageController,
+              maxLines: 5,
+              style: AppStyles.s14,
+              decoration: const InputDecoration(
+                labelText: 'Type a message here...',
               ),
-              const SizedBox(height: 12),
-              TextFormField(
-                controller: _emailController,
-                style: AppStyles.s14,
-                decoration: const InputDecoration(labelText: 'E-mail'),
-              ),
-              const SizedBox(height: 12),
-              TextFormField(
-                controller: _subjectController,
-                style: AppStyles.s14,
-                decoration: const InputDecoration(labelText: 'Subject'),
-              ),
-              const SizedBox(height: 12),
-              TextField(
-                controller: _messageController,
-                maxLines: 5,
-                style: AppStyles.s14,
-                decoration: const InputDecoration(
-                  labelText: 'Type a message here...',
-                ),
-              ),
-              const SizedBox(height: 16),
-              CustomButton(
-                label: 'Submit',
-                onPressed: () {},
-                backgroundColor: AppColors.primaryColor,
-                width: _getFormWidth(context.width),
-              ),
-            ],
-          ),
+            ),
+            const SizedBox(height: 16),
+            CustomButton(
+              label: 'Submit',
+              onPressed: () {},
+              backgroundColor: AppColors.primaryColor,
+              width: _getFormWidth(context.width),
+            ),
+          ],
         ),
       ),
     );
