@@ -38,7 +38,15 @@ class ProjectActions extends StatelessWidget {
                 },
               ),
             ),
-          ]
+          ],
+          if (project.githubRepoLink == null && project.previewLink == null)
+            Expanded(
+              child: CustomButton(
+                label: 'Soon in play store',
+                borderColor: AppColors.primaryColor,
+                onPressed: () {},
+              ),
+            )
         ],
       ),
     );

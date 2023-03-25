@@ -71,5 +71,18 @@ abstract class AppConstants {
           'https://github.com/radyhaggag/image_processing_program_with_python_flet',
       previewLink: 'https://youtu.be/o070OGt68VA',
     ),
+    Project(
+      name: 'Salat al janazah',
+      imageUrl:
+          'https://drive.google.com/uc?id=1UpCGckOS46GdTuHU4wuj7Abo_97gxe_E',
+      description:
+          'An application for add janazah prayer and view the prayers for nearby people',
+    ),
+    Project(
+      name: 'Ghaslah',
+      imageUrl: 'https://drive.google.com/uc?id=cH6yk_kVkDdxOLcUkgP1xpuo72',
+      description:
+          'An application for add wash cars reservation with location in map and the picker will come to wash the cars',
+    ),
   ];
 }

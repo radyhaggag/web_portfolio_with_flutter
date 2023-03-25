@@ -40,8 +40,8 @@ class ProjectItem extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 8),
-          if (project.previewLink != null || project.githubRepoLink != null)
-            ProjectActions(project: project),
+          // if (project.previewLink != null || project.githubRepoLink != null)
+          ProjectActions(project: project)
         ],
       ),
     );
