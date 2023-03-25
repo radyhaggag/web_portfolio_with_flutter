@@ -80,7 +80,8 @@ abstract class AppConstants {
     ),
     Project(
       name: 'Ghaslah',
-      imageUrl: 'https://drive.google.com/uc?id=cH6yk_kVkDdxOLcUkgP1xpuo72',
+      imageUrl:
+          'https://drive.google.com/uc?id=1ed4H2-cH6yk_kVkDdxOLcUkgP1xpuo72',
       description:
           'An application for add wash cars reservation with location in map and the picker will come to wash the cars',
     ),

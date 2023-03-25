@@ -32,7 +32,7 @@ class ProjectsGrid extends StatelessWidget {
     if (deviceWidth < DeviceType.mobile.getMaxWidth()) {
       return 1;
     } else if (deviceWidth < DeviceType.ipad.getMaxWidth()) {
-      return 2;
+      return 1;
     } else if (deviceWidth < DeviceType.smallScreenLaptop.getMaxWidth()) {
       return 3;
     } else {
