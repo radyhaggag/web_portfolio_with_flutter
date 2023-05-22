@@ -77,6 +77,8 @@ abstract class AppConstants {
           'https://drive.google.com/uc?id=1UpCGckOS46GdTuHU4wuj7Abo_97gxe_E',
       description:
           'An application for add janazah prayer and view the prayers for nearby people',
+      previewLink:
+          'https://play.google.com/store/apps/details?id=com.SJY.salataljanaza',
     ),
     Project(
       name: 'Ghaslah',

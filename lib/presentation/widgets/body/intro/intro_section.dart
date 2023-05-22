@@ -12,19 +12,19 @@ class IntroSection extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.symmetric(vertical: context.height * .12),
       child: context.width < DeviceType.mobile.getMaxWidth()
-          ? Column(
+          ? const Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
-              children: const [
+              children: [
                 IntroCircleImageBox(),
                 SizedBox(height: 50),
                 IntroText(),
               ],
             )
-          : Row(
+          : const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.center,
-              children: const [
+              children: [
                 IntroText(),
                 IntroCircleImageBox(),
               ],

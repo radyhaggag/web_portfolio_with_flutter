@@ -8,7 +8,7 @@ import 'custom_menu_btn.dart';
 import 'developer_name_btn.dart';
 import 'horizontal_headers.dart';
 
-class HomeAppBar extends StatelessWidget with PreferredSizeWidget {
+class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
   const HomeAppBar({super.key});
 
   @override

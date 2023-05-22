@@ -8,11 +8,11 @@ class ProjectsSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(bottom: 80),
+    return const Padding(
+      padding: EdgeInsets.only(bottom: 80),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: const [
+        children: [
           ProjectsIntro(),
           SizedBox(height: 52),
           ProjectsGrid(),
