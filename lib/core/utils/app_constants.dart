@@ -51,6 +51,7 @@ abstract class AppConstants {
       description:
           'An application for download videos from tiktok and save it to gallery.',
       githubRepoLink: 'https://github.com/radyhaggag/tiktok_downloader',
+      previewLink: 'https://youtu.be/DMSHT_2HPxI',
     ),
     Project(
       name: 'Bookly',
