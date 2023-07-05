@@ -78,7 +78,7 @@ abstract class AppConstants {
           'https://drive.google.com/uc?id=1UpCGckOS46GdTuHU4wuj7Abo_97gxe_E',
       description:
           'An application for add janazah prayer and view the prayers for nearby people',
-      previewLink:
+      googlePlay:
           'https://play.google.com/store/apps/details?id=com.SJY.salataljanaza',
     ),
     Project(
@@ -87,6 +87,16 @@ abstract class AppConstants {
           'https://drive.google.com/uc?id=1ed4H2-cH6yk_kVkDdxOLcUkgP1xpuo72',
       description:
           'An application for add wash cars reservation with location in map and the picker will come to wash the cars',
+    ),
+    Project(
+      name: 'Zawilan',
+      imageUrl:
+          'https://drive.google.com/uc?id=1ElTwguynMLqhS295-IE7bTTabsZGZp8s',
+      description:
+          'Zwailan is an education app based on units and sections system, you start by sign up on app and wait until the teacher accept your join request.',
+      previewLink: 'https://youtu.be/sICSM4D-rPM',
+      googlePlay:
+          'https://play.google.com/store/apps/details?id=com.radyhaggag.zawilan',
     ),
   ];
 }

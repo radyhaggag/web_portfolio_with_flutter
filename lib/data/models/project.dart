@@ -4,6 +4,7 @@ class Project {
   final String description;
   final String? githubRepoLink;
   final String? previewLink;
+  final String? googlePlay;
 
   const Project({
     required this.name,
@@ -11,5 +12,6 @@ class Project {
     required this.description,
     this.githubRepoLink,
     this.previewLink,
+    this.googlePlay,
   });
 }

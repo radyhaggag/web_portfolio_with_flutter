@@ -20,7 +20,7 @@ class ProjectActions extends StatelessWidget {
           if (project.previewLink != null)
             Expanded(
               child: CustomButton(
-                label: 'view live',
+                label: 'Preview',
                 backgroundColor: AppColors.primaryColor,
                 onPressed: () {
                   html.window.open(project.previewLink!, '_blank');
@@ -39,10 +39,25 @@ class ProjectActions extends StatelessWidget {
               ),
             ),
           ],
-          if (project.githubRepoLink == null && project.previewLink == null)
+          if (project.googlePlay != null) ...[
+            if (project.previewLink != null || project.githubRepoLink != null)
+              const SizedBox(width: 18),
             Expanded(
               child: CustomButton(
-                label: 'Soon in play store',
+                label: 'play store',
+                borderColor: AppColors.primaryColor,
+                onPressed: () {
+                  html.window.open(project.googlePlay!, '_blank');
+                },
+              ),
+            ),
+          ],
+          if (project.previewLink == null &&
+              project.githubRepoLink == null &&
+              project.googlePlay == null)
+            Expanded(
+              child: CustomButton(
+                label: 'No actions available',
                 borderColor: AppColors.primaryColor,
                 onPressed: () {},
               ),
