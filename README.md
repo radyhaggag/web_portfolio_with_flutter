@@ -1,16 +1,35 @@
 # portfolio
 
-A new Flutter project.
+Flutter Web Portfolio, Based on a design on Figma and hosted on Github host.
 
-## Getting Started
+### Demo URL
 
-This project is a starting point for a Flutter application.
+https://radyhaggag.github.io/MyPortfolio
 
-A few resources to get you started if this is your first Flutter project:
+### Youtube preview
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+https://youtu.be/oF-d655lNes
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 💻 Requirements
+
+- Any Operating System (MacOS, Linux, Windows)
+- Any IDE with Flutter SDK installed (Android Studio, VSCode etc)
+- A little knowledge of Dart and Flutter.
+
+### 👨‍💻 How to run
+
+> https://github.com/radyhaggag/web_portfolio_with_flutter.git
+> flutter run -d chrome --web-renderer html
+
+### Screenshots
+
+![Screenshot](./assets/previews/home_preview.png)
+![Screenshot](./assets/previews/about_preview.png)
+![Screenshot](./assets/previews/projects_one_preview.png)
+![Screenshot](./assets/previews/projects_two_preview.png)
+![Screenshot](./assets/previews/home_preview.png)
+![Screenshot](./assets/previews/contact_preview.png)
+
+### Mobile home Screenshot
+
+![Screenshot](./assets/previews/mobile_home_preview.png)
