@@ -32,7 +32,7 @@ abstract class AppConstants {
       description:
           'A football application to display all related matches and rankings in all international and local tournaments',
       githubRepoLink: 'https://github.com/radyhaggag/live_score',
-      previewLink: 'https://youtu.be/DT_9gLkeWKQ',
+      previewLink: 'https://youtu.be/HSIosFd6Sys',
     ),
     Project(
       name: 'Instagram clone',
@@ -42,7 +42,7 @@ abstract class AppConstants {
           'Social media application for share posts and stories with people, One-to-one chat, Share reels videos',
       githubRepoLink:
           'https://github.com/radyhaggag/Instagram-Clone-With-Clean-Architecture',
-      previewLink: 'https://youtu.be/lzlRjIr4d3o',
+      previewLink: 'https://youtu.be/MuuVjqrR49g',
     ),
     Project(
       name: 'TikTok Downloader',
@@ -51,7 +51,7 @@ abstract class AppConstants {
       description:
           'An application for download videos from tiktok and save it to gallery.',
       githubRepoLink: 'https://github.com/radyhaggag/tiktok_downloader',
-      previewLink: 'https://youtu.be/DMSHT_2HPxI',
+      previewLink: 'https://youtu.be/mWeA625pcrI',
     ),
     Project(
       name: 'Bookly',
@@ -60,7 +60,7 @@ abstract class AppConstants {
       description: 'An application to explore books and view their details.',
       githubRepoLink:
           'https://github.com/radyhaggag/bookly_app_with_mvvm_and_bloc',
-      previewLink: 'https://youtu.be/-JZzmRoKq2E',
+      previewLink: 'https://youtu.be/3nU_dYjsPsg',
     ),
     Project(
       name: 'Image processing',
@@ -70,7 +70,7 @@ abstract class AppConstants {
           'An Desktop program for process images and apply some filters to them.',
       githubRepoLink:
           'https://github.com/radyhaggag/image_processing_program_with_python_flet',
-      previewLink: 'https://youtu.be/o070OGt68VA',
+      previewLink: 'https://youtu.be/s1KFdBKNFig',
     ),
     Project(
       name: 'Salat al janazah',
@@ -80,6 +80,7 @@ abstract class AppConstants {
           'An application for add janazah prayer and view the prayers for nearby people',
       googlePlay:
           'https://play.google.com/store/apps/details?id=com.SJY.salataljanaza',
+      previewLink: 'https://youtu.be/wK9Y9BhP190',
     ),
     Project(
       name: 'Ghaslah',
@@ -87,7 +88,7 @@ abstract class AppConstants {
           'https://drive.google.com/uc?id=1ed4H2-cH6yk_kVkDdxOLcUkgP1xpuo72',
       description:
           'An application for add wash cars reservation with location in map and the picker will come to wash the cars',
-      previewLink: 'https://youtu.be/3kc5zXBVQeI',
+      previewLink: 'https://youtu.be/gkeRSAfCZaI',
     ),
     Project(
       name: 'Zawilan',
@@ -95,7 +96,7 @@ abstract class AppConstants {
           'https://drive.google.com/uc?id=1ElTwguynMLqhS295-IE7bTTabsZGZp8s',
       description:
           'Zwailan is an education app based on units and sections system, you start by sign up on app and wait until the teacher accept your join request.',
-      previewLink: 'https://youtu.be/sICSM4D-rPM',
+      previewLink: 'https://youtu.be/g92W-SmfkKc',
       googlePlay:
           'https://play.google.com/store/apps/details?id=com.radyhaggag.zawilan',
     ),
