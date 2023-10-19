@@ -14,6 +14,7 @@ dependencies:
   cached_network_image: ^3.2.3
   cupertino_icons: ^1.0.2
   equatable: ^2.0.5
+  adaptive_theme: ^3.4.1
   flutter:
     sdk: flutter
   flutter_bloc: ^8.1.2
@@ -21,6 +22,8 @@ dependencies:
   font_awesome_flutter: ^10.4.0
   shimmer: ^2.0.0
   universal_html: ^2.0.9
+  firebase_core: ^2.17.0
+
 
 dev_dependencies:
   flutter_lints: ^2.0.0

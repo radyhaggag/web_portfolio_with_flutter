@@ -19,10 +19,10 @@ class AboutMeSection extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const AboutMeIntro(),
-          const SizedBox(height: 8),
+          const SizedBox(height: 50),
           Center(
             child: CustomDivider(
-              color: AppColors.white,
+              color: AppColors.secondaryColor,
               width: context.width / 4,
               height: 2,
             ),

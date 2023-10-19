@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:portfolio/presentation/widgets/app_bar/theme_header_btn.dart';
 
 import '../../../core/utils/app_enums.dart';
 import '../../blocs/home_bloc/home_bloc.dart';
@@ -13,10 +14,18 @@ class HorizontalHeaders extends StatelessWidget {
     return BlocBuilder<HomeBloc, HomeState>(
       builder: (context, state) {
         return Row(
-          children: List.generate(
-            AppBarHeaders.values.length,
-            (index) => CustomHeaderBtn(headerIndex: index),
-          ),
+          children: [
+            ...List.generate(
+              AppBarHeaders.values.length,
+              (index) {
+                return CustomHeaderBtn(headerIndex: index);
+              },
+            ),
+            const Padding(
+              padding: EdgeInsets.all(12.0),
+              child: ThemeHeader(),
+            ),
+          ],
         );
       },
     );

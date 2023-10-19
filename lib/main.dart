@@ -4,7 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'bloc_observer.dart';
 import 'portfolio_app.dart';
 
-void main() {
+Future<void> main() async {
   Bloc.observer = MyBlocObserver();
   runApp(const PortfolioApp());
 }

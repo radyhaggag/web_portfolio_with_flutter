@@ -23,7 +23,9 @@ class _BasicServiceItemState extends State<BasicServiceItem> {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.all(10),
-      color: itemColor,
+      decoration: BoxDecoration(
+          color: itemColor.withOpacity(0.7),
+          borderRadius: BorderRadius.circular(10)),
       child: MouseRegion(
         onEnter: _onEnter,
         onExit: _onExit,

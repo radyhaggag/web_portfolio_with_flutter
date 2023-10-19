@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/core/utils/app_colors.dart';
 
-import '../../../../core/utils/app_colors.dart';
 import '../../../../core/utils/app_enums.dart';
 import '../../../../core/utils/app_extensions.dart';
 import '../../../../core/utils/app_styles.dart';
@@ -50,35 +50,121 @@ class _ContactFormState extends State<ContactForm> {
           children: [
             TextFormField(
               controller: _nameController,
-              style: AppStyles.s14,
-              decoration: const InputDecoration(labelText: 'Name'),
+              style: AppStyles.s14, // Text style
+              decoration: InputDecoration(
+                icon: Icon(
+                  Icons.person,
+                  color: AppColors.lowPriority, // Icon color
+                ),
+                labelText: 'Name',
+                labelStyle: TextStyle(
+                  color: AppColors.lowPriority, // Label text color
+                ),
+                focusedBorder: OutlineInputBorder(
+                  // Border color when the field is focused
+                  borderSide: BorderSide(
+                    color:
+                        AppColors.lowPriority, // Change to your desired color
+                  ),
+                ),
+                enabledBorder: OutlineInputBorder(
+                  // Border color when the field is not focused
+                  borderSide: BorderSide(
+                    color:
+                        AppColors.primaryLight, // Change to your desired color
+                  ),
+                ),
+              ),
             ),
             const SizedBox(height: 12),
             TextFormField(
               controller: _emailController,
               style: AppStyles.s14,
-              decoration: const InputDecoration(labelText: 'E-mail'),
+              decoration: InputDecoration(
+                icon: Icon(
+                  Icons.email,
+                  color: AppColors.lowPriority, // Icon color
+                ),
+                focusedBorder: OutlineInputBorder(
+                  // Border color when the field is focused
+                  borderSide: BorderSide(
+                    color:
+                        AppColors.lowPriority, // Change to your desired color
+                  ),
+                ),
+                enabledBorder: OutlineInputBorder(
+                  // Border color when the field is not focused
+                  borderSide: BorderSide(
+                    color:
+                        AppColors.primaryLight, // Change to your desired color
+                  ),
+                ),
+                labelText: 'E-mail',
+                labelStyle: TextStyle(
+                  color: AppColors.lowPriority, // Label text color
+                ),
+              ),
             ),
             const SizedBox(height: 12),
             TextFormField(
               controller: _subjectController,
-              style: AppStyles.s14,
-              decoration: const InputDecoration(labelText: 'Subject'),
+              style: AppStyles.s14, // Text style
+              decoration: InputDecoration(
+                icon: Icon(
+                  Icons.subdirectory_arrow_right_outlined,
+                  color: AppColors.lowPriority, // Icon color
+                ),
+                labelText: 'Subject',
+                labelStyle: TextStyle(
+                  color: AppColors.lowPriority, // Label text color
+                ),
+                focusedBorder: OutlineInputBorder(
+                  // Border color when the field is focused
+                  borderSide: BorderSide(
+                    color:
+                        AppColors.lowPriority, // Change to your desired color
+                  ),
+                ),
+                enabledBorder: OutlineInputBorder(
+                  // Border color when the field is not focused
+                  borderSide: BorderSide(
+                    color:
+                        AppColors.primaryLight, // Change to your desired color
+                  ),
+                ),
+              ),
             ),
             const SizedBox(height: 12),
             TextField(
               controller: _messageController,
               maxLines: 5,
-              style: AppStyles.s14,
-              decoration: const InputDecoration(
+              style: AppStyles.s14, // Text style
+              decoration: InputDecoration(
                 labelText: 'Type a message here...',
+                labelStyle: TextStyle(
+                  color: AppColors.lowPriority, // Label text color
+                ),
+                focusedBorder: OutlineInputBorder(
+                  // Border color when the field is focused
+                  borderSide: BorderSide(
+                    color:
+                        AppColors.lowPriority, // Change to your desired color
+                  ),
+                ),
+                enabledBorder: OutlineInputBorder(
+                  // Border color when the field is not focused
+                  borderSide: BorderSide(
+                    color:
+                        AppColors.primaryLight, // Change to your desired color
+                  ),
+                ),
               ),
             ),
             const SizedBox(height: 16),
             CustomButton(
               label: 'Submit',
               onPressed: () {},
-              backgroundColor: AppColors.primaryColor,
+              borderColor: AppColors.lowPriority,
               width: _getFormWidth(context.width),
             ),
           ],

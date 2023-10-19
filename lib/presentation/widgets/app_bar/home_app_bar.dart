@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../../core/utils/app_colors.dart';
 import '../../../core/utils/app_constants.dart';
 import '../../../core/utils/app_enums.dart';
 import '../../../core/utils/app_extensions.dart';
@@ -17,7 +16,6 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: AppColors.appBarColor,
       padding: EdgeInsets.symmetric(
         horizontal: _getHorizontalPadding(context),
       ),

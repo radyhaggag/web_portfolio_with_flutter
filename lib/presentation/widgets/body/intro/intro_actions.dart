@@ -16,7 +16,7 @@ class IntoActions extends StatelessWidget {
       CustomButton(
         label: AppBarHeaders.aboutMe.getString(),
         icon: Icons.person,
-        backgroundColor: AppColors.primaryColor,
+        borderColor: AppColors.lowPriority,
         onPressed: () {
           context.read<HomeBloc>().add(ChangeAppBarHeadersIndex(1));
         },
@@ -28,7 +28,7 @@ class IntoActions extends StatelessWidget {
       CustomButton(
         label: AppBarHeaders.projects.getString(),
         icon: Icons.remove_red_eye,
-        borderColor: AppColors.primaryColor,
+        borderColor: AppColors.lowPriority,
         onPressed: () {
           context.read<HomeBloc>().add(ChangeAppBarHeadersIndex(2));
         },

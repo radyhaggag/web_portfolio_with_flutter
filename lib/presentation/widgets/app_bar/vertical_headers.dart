@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:portfolio/presentation/widgets/app_bar/theme_header_btn.dart';
 
 import '../../../core/utils/app_enums.dart';
 import '../../../core/utils/app_extensions.dart';
@@ -18,16 +19,19 @@ class VerticalHeaders extends StatelessWidget {
         }
         return SizedBox(
           width: context.width,
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: List.generate(
+          child: Column(mainAxisSize: MainAxisSize.min, children: [
+            ...List.generate(
               AppBarHeaders.values.length,
               (index) => SizedBox(
                 width: context.width,
                 child: CustomHeaderBtn(headerIndex: index),
               ),
             ),
-          ),
+            const Padding(
+              padding: EdgeInsets.all(12.0),
+              child: ThemeHeader(),
+            ),
+          ]),
         );
       },
     );

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:universal_html/html.dart' as html;
 
-import '../../../../core/utils/app_colors.dart';
 import '../../../../core/utils/social_links.dart';
 
 class SocialMediaIcons extends StatelessWidget {
@@ -13,8 +12,24 @@ class SocialMediaIcons extends StatelessWidget {
     return const Wrap(
       children: [
         SocialMediaIconBtn(
-          icon: FontAwesomeIcons.facebook,
-          link: SocialLinks.facebook,
+          icon: FontAwesomeIcons.dev,
+          link: SocialLinks.devTo,
+        ),
+        SocialMediaIconBtn(
+          icon: FontAwesomeIcons.stackOverflow,
+          link: SocialLinks.stackOverflow,
+        ),
+        SocialMediaIconBtn(
+          icon: FontAwesomeIcons.dribbble,
+          link: SocialLinks.dribbble,
+        ),
+        SocialMediaIconBtn(
+          icon: FontAwesomeIcons.hashnode,
+          link: SocialLinks.hashnode,
+        ),
+        SocialMediaIconBtn(
+          icon: FontAwesomeIcons.userGear,
+          link: SocialLinks.geeksForGeeks,
         ),
         SocialMediaIconBtn(
           icon: FontAwesomeIcons.instagram,
@@ -50,7 +65,6 @@ class SocialMediaIconBtn extends StatelessWidget {
       },
       child: Icon(
         icon,
-        color: AppColors.primaryColor,
         size: 32,
       ),
     );
