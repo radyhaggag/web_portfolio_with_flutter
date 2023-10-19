@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "251650277046",
+    "project_id": "saifalmajdalmassri-12684",
+    "storage_bucket": "saifalmajdalmassri-12684.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:251650277046:android:4d6878cb5ecb7eb8637017",
+        "android_client_info": {
+          "package_name": "com.example.portfolio"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAcwu0wL-GVAIhrc4TA2aVitENQfXixP0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,20 @@
+{
+  "projects": {
+    "default": "saif-almajd"
+  },
+  "targets": {
+    "saif-almajd": {
+      "hosting": {
+        "firebase": [
+          "hosting",
+          "target:apply"
+        ],
+        "SaifAlmajd": [
+          "SaifAlmajd",
+          "saifalmajd.web.app"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
