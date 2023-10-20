@@ -26,7 +26,7 @@ abstract class AppConstants {
     Project(
         name: "Dart_Secure Package",
         imageUrl:
-            "https://github.com/Syf-Almjd/dart_secure/blob/master/assets/dartSecure.png",
+            "https://play-lh.googleusercontent.com/5V8CxJXpypg4zxdtB7FDHJAsgXSJXpnulFS90VvO2v4H5DPDasM18E-CnYsnk-agKVTJ=w416-h235-rw",
         description:
             "An official package published in Pub.dev, for the cyber security of mobile applications, Programmed with Dart.",
         previewLink: "https://pub.dev/packages/dart_secure",
@@ -34,7 +34,7 @@ abstract class AppConstants {
     Project(
         name: "Human Resources Management System",
         imageUrl:
-            "https://github.com/Syf-Almjd/TaskForce_HRMS/blob/master/assets/logoTransparent.png",
+            "https://play-lh.googleusercontent.com/ZBiCO7NM0gSzodLvd6XLXUHQ8fyPDCRjnK05b6Ftkuc6VEUwsw9xeXr7l7KHiwAvOg=w3840-h2160-rw",
         description:
             "Worked with Flutter, Dart, and Firebase in a Flutter team in building a secure HR System.",
         githubRepoLink: "https://github.com/Syf-Almjd/TaskForce_HRMS"),
@@ -60,7 +60,7 @@ abstract class AppConstants {
     Project(
         name: "HealthyU+ App",
         imageUrl:
-            "https://github.com/Syf-Almjd/HealthyUplus/blob/master/assets/logo.jpg",
+            "https://play-lh.googleusercontent.com/USePwYFvWfsMbGFwb2he8C51ADL0QT7EmPimxGYX90B66Hnlj2t8c97_QfZ8G5XUOVY",
         description:
             "An App that uses API to provide food and BMI suggestions to help track diets for people.",
         githubRepoLink: "https://github.com/Syf-Almjd/HealthyUplus"),
@@ -104,7 +104,7 @@ abstract class AppConstants {
     Project(
         name: "VACR Services",
         imageUrl:
-            "https://github.com/Syf-Almjd/VACR/blob/master/app/src/main/main_logo-playstore.png",
+            "https://play-lh.googleusercontent.com/jl6WOvCGNw07iLEG2I44EY6KyHBCxrenZ963e_T8K_MBmTFM1Ps_dFmWBNRnCPr3YAs=w3840-h2160-rw",
         previewLink:
             "https://www.youtube.com/watch?v=v-WBd-0_98c&feature=youtu.be",
         googlePlay:

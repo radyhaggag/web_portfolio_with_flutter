@@ -20,12 +20,14 @@ class _ThemeHeaderState extends State<ThemeHeader> {
             visible: BlocProvider.of<ThemeBloc>(context).state.themeData ==
                 ThemeState.darkTheme.themeData,
             replacement: InkWell(
+                hoverColor: Colors.transparent,
                 onTap: () {
                   BlocProvider.of<ThemeBloc>(context)
                       .add(ThemeEventChange(ThemeEventType.toggleDark));
                 },
                 child: const Icon(Icons.nightlight_outlined)),
             child: InkWell(
+                hoverColor: Colors.transparent,
                 onTap: () {
                   BlocProvider.of<ThemeBloc>(context)
                       .add(ThemeEventChange(ThemeEventType.toggleLight));
