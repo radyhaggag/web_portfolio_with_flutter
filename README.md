@@ -4,11 +4,8 @@ Flutter Web Portfolio, Based on a design on Figma and hosted on Github host.
 
 ### Demo URL
 
-https://radyhaggag.github.io/MyPortfolio
+https://saifalmajd.web.app/
 
-### Youtube preview
-
-https://youtu.be/_llGOcJvPzA
 
 ### 💻 Requirements
 
