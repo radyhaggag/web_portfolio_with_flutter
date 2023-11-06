@@ -1,12 +1,11 @@
 import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
-import 'package:portfolio/core/utils/app_colors.dart';
 import 'package:portfolio/presentation/blocs/theme_bloc/theme_event.dart';
 
 part 'theme_state.dart';
 
 class ThemeBloc extends Bloc<ThemeEvent, ThemeState> {
-  ThemeBloc() : super(ThemeState.lightTheme) {
+  ThemeBloc() : super(ThemeState.darkTheme) {
     on<ThemeEventChange>((event, emit) {
       switch (event.currentTheme) {
         case ThemeEventType.toggleDark:

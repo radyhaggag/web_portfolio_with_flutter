@@ -1,35 +1,44 @@
-# portfolio
+# Portfolio: Flutter Web Portfolio
 
-Flutter Web Portfolio, Based on a design on Figma and hosted on Github host.
+This is a stunning Flutter Web portfolio, meticulously crafted based on a Figma design and elegantly hosted on Firebase.
 
-### Demo URL
+## 🌐 Demo URL
+Explore the live portfolio: [https://saifalmajd.web.app/](https://saifalmajd.web.app/)
 
-https://radyhaggag.github.io/MyPortfolio
+## 📺 Youtube Preview
+Watch a sneak peek of the portfolio in action: [YouTube Preview](https://youtu.be/_llGOcJvPzA)
 
-### Youtube preview
-
-https://youtu.be/_llGOcJvPzA
-
-### 💻 Requirements
-
+## 💻 Requirements
+To tinker with this project, you'll need the following:
 - Any Operating System (MacOS, Linux, Windows)
-- Any IDE with Flutter SDK installed (Android Studio, VSCode etc)
-- A little knowledge of Dart and Flutter.
+- An Integrated Development Environment (IDE) with Flutter SDK installed (Android Studio, VSCode, etc.)
+- A basic understanding of Dart and Flutter.
 
-### 👨‍💻 How to run
+## 👨‍💻 How to Run
+Here's how to get the portfolio up and running:
+1. Clone the repository: [GitHub Repository](https://github.com/radyhaggag/web_portfolio_with_flutter.git)
+2. Run the project in your browser using the command:
+   ```
+   flutter run -d chrome --web-renderer html
+   ```
 
-> https://github.com/radyhaggag/web_portfolio_with_flutter.git
-> flutter run -d chrome --web-renderer html
+## 📷 Screenshots
+Take a glimpse of the portfolio through these captivating screenshots:
 
-### Screenshots
+- Home
+  ![Home](./assets/previews/home_preview.png)
 
-![Screenshot](./assets/previews/home_preview.png)
-![Screenshot](./assets/previews/about_preview.png)
-![Screenshot](./assets/previews/projects_one_preview.png)
-![Screenshot](./assets/previews/projects_two_preview.png)
-![Screenshot](./assets/previews/home_preview.png)
-![Screenshot](./assets/previews/contact_preview.png)
+- About
+  ![About](./assets/previews/about_preview.png)
 
-### Mobile home Screenshot
+- Projects (Part 1)
+  ![Projects](./assets/previews/projects_preview.png)
 
-![Screenshot](./assets/previews/mobile_home_preview.png)
+- Contact
+  ![Contact](./assets/previews/contact_preview.png)
+
+## 📱 Mobile Home Screenshot
+Here's a peek at the mobile version of the home page:
+![Mobile Home](./assets/previews/mobile_home_preview.png)
+
+Explore the world of this web portfolio designed with Flutter, and showcase your skills in style!

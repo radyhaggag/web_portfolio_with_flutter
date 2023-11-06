@@ -1,5 +1,5 @@
 name: portfolio
-description: A new Flutter project.
+description: SaifAlmajd Portfolio and Resume!
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -25,6 +25,7 @@ dependencies:
   firebase_core: ^2.17.0
 
 
+
 dev_dependencies:
   flutter_lints: ^2.0.0
   flutter_test:
@@ -48,6 +49,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/
+    - assets/previews/
 
   fonts:
     - family: Poppins

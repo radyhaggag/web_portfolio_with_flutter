@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/core/utils/app_colors.dart';
+import 'package:portfolio/core/utils/app_strings.dart';
+import 'package:universal_html/html.dart' as html;
 
 import '../../../../core/utils/app_enums.dart';
 import '../../../../core/utils/app_extensions.dart';
@@ -52,10 +54,6 @@ class _ContactFormState extends State<ContactForm> {
               controller: _nameController,
               style: AppStyles.s14, // Text style
               decoration: InputDecoration(
-                icon: Icon(
-                  Icons.person,
-                  color: AppColors.lowPriority, // Icon color
-                ),
                 labelText: 'Name',
                 labelStyle: TextStyle(
                   color: AppColors.lowPriority, // Label text color
@@ -81,10 +79,6 @@ class _ContactFormState extends State<ContactForm> {
               controller: _emailController,
               style: AppStyles.s14,
               decoration: InputDecoration(
-                icon: Icon(
-                  Icons.email,
-                  color: AppColors.lowPriority, // Icon color
-                ),
                 focusedBorder: OutlineInputBorder(
                   // Border color when the field is focused
                   borderSide: BorderSide(
@@ -110,10 +104,6 @@ class _ContactFormState extends State<ContactForm> {
               controller: _subjectController,
               style: AppStyles.s14, // Text style
               decoration: InputDecoration(
-                icon: Icon(
-                  Icons.subdirectory_arrow_right_outlined,
-                  color: AppColors.lowPriority, // Icon color
-                ),
                 labelText: 'Subject',
                 labelStyle: TextStyle(
                   color: AppColors.lowPriority, // Label text color
@@ -163,7 +153,9 @@ class _ContactFormState extends State<ContactForm> {
             const SizedBox(height: 16),
             CustomButton(
               label: 'Submit',
-              onPressed: () {},
+              onPressed: () async {
+                sendEmail();
+              },
               borderColor: AppColors.lowPriority,
               width: _getFormWidth(context.width),
             ),
@@ -171,6 +163,17 @@ class _ContactFormState extends State<ContactForm> {
         ),
       ),
     );
+  }
+
+  sendEmail() async {
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(
+        content: Text("Redirecting to Gmail!"),
+      ),
+    );
+    html.window.open(
+        "${AppStrings.developerEmail}?subject=$_subjectController&body=My Name is $_nameController with $_emailController and I would like to send you a message: $_messageController",
+        '_blank');
   }
 
   double _getFormWidth(double deviceWidth) {

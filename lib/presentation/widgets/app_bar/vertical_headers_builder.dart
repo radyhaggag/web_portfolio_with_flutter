@@ -1,7 +1,8 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../../core/utils/app_colors.dart';
 import '../../../core/utils/app_enums.dart';
 import '../../blocs/home_bloc/home_bloc.dart';
 import 'vertical_headers.dart';
@@ -17,9 +18,15 @@ class VerticalHeadersBuilder extends StatelessWidget {
           sizeCurve: Curves.bounceInOut,
           alignment: Alignment.topCenter,
           crossFadeState: _getCrossFadeState(context),
-          firstChild: Container(
-            color: AppColors.appBarColor,
-            child: const VerticalHeaders(),
+          firstChild: ClipRect(
+            child: BackdropFilter(
+              filter: ImageFilter.blur(sigmaX: 30.0, sigmaY: 30.0),
+              child: Container(
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(30.0),
+                      color: Colors.grey.shade200.withOpacity(0.1)),
+                  child: const VerticalHeaders()),
+            ),
           ),
           secondChild: Container(),
           duration: const Duration(milliseconds: 200),

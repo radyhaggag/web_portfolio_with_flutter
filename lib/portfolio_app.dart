@@ -19,7 +19,7 @@ class PortfolioApp extends StatelessWidget {
             light: ThemeState.lightTheme.themeData,
             dark: ThemeState.darkTheme.themeData,
             debugShowFloatingThemeButton: false,
-            initial: AdaptiveThemeMode.dark,
+            initial: AdaptiveThemeMode.light,
             builder: (theme, darkTheme) => MaterialApp(
               debugShowCheckedModeBanner: false,
               title: 'SaifAlmajd Portfolio',

@@ -8,11 +8,11 @@ class ThemeState {
 
   static ThemeState get darkTheme =>
       ThemeState(ThemeData.dark(useMaterial3: true).copyWith(
-          colorScheme: const ColorScheme.dark(),
-          appBarTheme: AppBarTheme(color: AppColors.secondaryColor)));
+        colorScheme: const ColorScheme.dark(),
+      ));
 
   static ThemeState get lightTheme =>
       ThemeState(ThemeData.light(useMaterial3: true).copyWith(
-          colorScheme: const ColorScheme.light(),
-          appBarTheme: AppBarTheme(color: AppColors.white)));
+        colorScheme: const ColorScheme.light(),
+      ));
 }

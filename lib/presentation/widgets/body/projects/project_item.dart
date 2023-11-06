@@ -34,7 +34,11 @@ class ProjectItem extends StatelessWidget {
           Expanded(
             child: AutoSizeText(
               project.description,
-              style: AppStyles.s18,
+              style: TextStyle(
+                color: AppColors.lightColor,
+                fontSize: 16,
+                fontWeight: FontWeight.w600,
+              ),
               minFontSize: 12,
               maxLines: 4,
             ),

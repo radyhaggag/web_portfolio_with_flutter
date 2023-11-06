@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:portfolio/core/utils/app_colors.dart';
+import 'package:portfolio/core/utils/app_strings.dart';
 import 'package:portfolio/presentation/widgets/app_bar/theme_header_btn.dart';
 import 'package:universal_html/html.dart' as html;
 
@@ -35,13 +37,21 @@ class VerticalHeaders extends StatelessWidget {
             InkWell(
               hoverColor: Colors.transparent,
               onTap: () {
-                html.window.open(
-                    "https://drive.google.com/drive/folders/1inc2Wy0ajAR7p9ZrlsJKnbi4dDCZF-fR?usp=share_link",
-                    '_blank');
+                html.window.open(AppStrings.developerResume, '_blank');
               },
-              child: const Padding(
-                padding: EdgeInsets.all(12.0),
-                child: Text("Resume"),
+              child: Padding(
+                padding: const EdgeInsets.all(12.0),
+                child: Container(
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(50),
+                      color: AppColors.primaryColor),
+                  child: const Padding(
+                    padding: EdgeInsets.fromLTRB(40, 10, 40, 10),
+                    child: Text(
+                      "Resume",
+                    ),
+                  ),
+                ),
               ),
             ),
           ]),

@@ -22,7 +22,7 @@ class AboutMeSection extends StatelessWidget {
           const SizedBox(height: 50),
           Center(
             child: CustomDivider(
-              color: AppColors.secondaryColor,
+              color: AppColors.darkColor,
               width: context.width / 4,
               height: 2,
             ),
