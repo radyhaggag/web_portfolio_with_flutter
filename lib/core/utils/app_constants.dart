@@ -32,6 +32,13 @@ abstract class AppConstants {
         previewLink: "https://pub.dev/packages/dart_secure",
         githubRepoLink: "https://github.com/Syf-Almjd/dart_secure"),
     Project(
+        name: "Flutter Clean Coded",
+        imageUrl:
+            "https://storage.googleapis.com/cms-storage-bucket/70760bf1e88b184bb1bc.png",
+        githubRepoLink: "https://github.com/Syf-Almjd/Fluttre_Clean_Coded",
+        description:
+            "A clean architecture project to help optimize and organize flutter mobile applications."),
+    Project(
         name: "Human Resources Management System",
         imageUrl:
             "https://play-lh.googleusercontent.com/ZBiCO7NM0gSzodLvd6XLXUHQ8fyPDCRjnK05b6Ftkuc6VEUwsw9xeXr7l7KHiwAvOg=w3840-h2160-rw",
@@ -49,7 +56,25 @@ abstract class AppConstants {
         googlePlay:
             "https://play.google.com/store/apps/details?id=com.mjd.sci_acc"),
     Project(
-        name: "Angel Tour Guide",
+        name: "Sapura Management System",
+        imageUrl:
+            "https://play-lh.googleusercontent.com/YPgI0euLMKAAhi58yzpfqLXzPcHK_FJMU2d2SXqe6GOkBx4TaftK_iZNvt7_3F-EKKc=w240-h480-rw",
+        googlePlay:
+            "https://play.google.com/store/apps/details?id=com.mjd.sapura_tm.sapura_tm",
+        githubRepoLink: "https://github.com/Syf-Almjd/Sapura_TM",
+        description:
+            "The Supura Task Management App is a simple and efficient solution for organizing and managing tasks within your company."),
+    Project(
+        name: "DSA Windows Text Editor",
+        imageUrl:
+            "https://play-lh.googleusercontent.com/YPgI0euLMKAAhi58yzpfqLXzPcHK_FJMU2d2SXqe6GOkBx4TaftK_iZNvt7_3F-EKKc=w240-h480-rw",
+        googlePlay:
+            "https://play.google.com/store/apps/details?id=com.mjd.sapura_tm.sapura_tm",
+        githubRepoLink: "https://github.com/Syf-Almjd/Sapura_TM",
+        description:
+            "A unique Text Editor that uses a stack to save, undo or redo operations made with JAVA."),
+    Project(
+        name: "Angel Tour Guide, Malaysia!",
         imageUrl:
             "https://play-lh.googleusercontent.com/LKm_zMpAl4swlmehcJ3FltuBz5pOsFriTbJ9hzuZh1EG2KEmQOcJepPdvreC2F0fVw=w240-h480-rw",
         description:
@@ -58,11 +83,11 @@ abstract class AppConstants {
             "https://play.google.com/store/apps/details?id=com.mjd.angel",
         githubRepoLink: "https://github.com/Syf-Almjd/Angel_Tour_Guide"),
     Project(
-        name: "HealthyU+ App",
+        name: "FoodFinder: Food Exploration",
         imageUrl:
             "https://play-lh.googleusercontent.com/USePwYFvWfsMbGFwb2he8C51ADL0QT7EmPimxGYX90B66Hnlj2t8c97_QfZ8G5XUOVY",
         description:
-            "An App that uses API to provide food and BMI suggestions to help track diets for people.",
+            "An App that uses API to allow users to explore food and suggestions to help them choose the food they like.",
         githubRepoLink: "https://github.com/Syf-Almjd/HealthyUplus"),
     Project(
         name: "MealMaster Chef App",
@@ -94,13 +119,22 @@ abstract class AppConstants {
         description:
             "A mobile app made in Arabic that is full of functionalities to assist students in printing inquiries."),
     Project(
+        name: "Forsan Admin",
+        imageUrl:
+            "https://play-lh.googleusercontent.com/AqggaRoSkh1J5YMsRwEzDSZa-IeNkIPSfKPgBx_307twMJa_4bEJbItHx2AiHLLrBBZ6",
+        githubRepoLink: "https://github.com/Syf-Almjd/Forsan_Admin",
+        googlePlay:
+            "https://play.google.com/store/apps/details?id=com.mjd.forsan_admin",
+        description:
+            "A management app that can accept manage modify and delete orders coming from forsan Application."),
+    Project(
         name: "AIU Social Business Website",
         imageUrl:
             "https://play-lh.googleusercontent.com/BcvQhTnhBJe3m-MrJ-NdlOzab7ScZ6Mq16a2ZlkNHfr9MMJxWMt8_Op_p7xSwkvTQi4=w526-h296-rw",
         previewLink: "https://aiusocialbusiness.aiu.edu.my/",
         googlePlay: "https://aiusocialbusiness.aiu.edu.my/",
         description:
-            "Developed to help technologize AIU Social Business as well as E-Commerce for SB Shops."),
+            "Developed to help technology AIU Social Business as well as E-Commerce for SB Shops."),
     Project(
         name: "VACR Services",
         imageUrl:
@@ -111,6 +145,15 @@ abstract class AppConstants {
             "https://play.google.com/store/apps/details?id=com.mjd.vacrservices",
         githubRepoLink: "https://github.com/Syf-Almjd/VACR",
         description:
-            "An App developed during COVID-19 to help people request and find services they need at home.")
+            "An App developed during COVID-19 to help people request and find services they need at home."),
+    Project(
+        name: "BMI Calculator",
+        imageUrl:
+            "https://play-lh.googleusercontent.com/E32XCpDcTqjhjU3qkMECXLGSikt3m4Lz2h8D84LBfM3uV4l4Sc8K2nY8JBHqUhv-Hu4=w240-h480-rw",
+        googlePlay:
+            "https://play.google.com/store/apps/details?id=com.mjd.bmihealthy.bmihealthy",
+        githubRepoLink: "https://github.com/Syf-Almjd/BMIHealthy",
+        description:
+            "An App to help calculate the BMI and provides suggestion based on BMI and keeps track of it."),
   ];
 }
