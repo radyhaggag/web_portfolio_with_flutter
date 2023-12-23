@@ -11,10 +11,11 @@ environment:
 
 dependencies:
   auto_size_text: ^3.0.0
-  cached_network_image: ^3.2.3
-  cupertino_icons: ^1.0.2
+  cached_network_image: ^3.3.0
+  cupertino_icons: ^1.0.6
   equatable: ^2.0.5
   adaptive_theme: ^3.4.1
+  flutter_super_html_viewer: ^0.1.0
   flutter:
     sdk: flutter
   flutter_bloc: ^8.1.2

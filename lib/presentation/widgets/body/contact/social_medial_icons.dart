@@ -16,6 +16,10 @@ class SocialMediaIcons extends StatelessWidget {
           link: SocialLinks.devTo,
         ),
         SocialMediaIconBtn(
+          icon: FontAwesomeIcons.github,
+          link: SocialLinks.github,
+        ),
+        SocialMediaIconBtn(
           icon: FontAwesomeIcons.stackOverflow,
           link: SocialLinks.stackOverflow,
         ),
