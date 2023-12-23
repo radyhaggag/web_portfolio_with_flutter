@@ -39,8 +39,8 @@ Take a glimpse of the portfolio through these captivating screenshots:
 
 ## 📱 Mobile Home Screenshot
 Here's a peek at the mobile version of the home page:
-![Mobile Home](./assets/previews/mobile_home_preview.png)
 
+   ![Mobile Home](./assets/previews/mobile_home_preview.png)
 
 
 Explore the world of this web portfolio designed with Flutter, and showcase your skills in style!
