@@ -33,7 +33,6 @@ class ProjectActions extends StatelessWidget {
             Expanded(
               child: CustomButton(
                 label: 'Github',
-                textColor: AppColors.white,
                 borderColor: AppColors.primaryColor,
                 onPressed: () {
                   html.window.open(project.githubRepoLink!, '_blank');
@@ -47,7 +46,6 @@ class ProjectActions extends StatelessWidget {
             Expanded(
               child: CustomButton(
                 label: 'Play Store',
-                textColor: AppColors.white,
                 backgroundColor: AppColors.blueColor,
                 borderColor: AppColors.primaryColor,
                 onPressed: () {

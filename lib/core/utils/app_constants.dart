@@ -49,15 +49,13 @@ abstract class AppConstants {
         description:
             "The Supura Task Management App is a simple and efficient solution for organizing and managing tasks within your company."),
     Project(
-        name: "Albukhary Computing Community",
+        name: "FlutterFlow Components",
         imageUrl:
-            "https://play-lh.googleusercontent.com/m1My7F7HSe8B56MVXNqcO53bLXYDpIC-bC1FVsajJ6dhCa4VuXLd0BBy6_l90iinYe4I",
+            "https://raw.githubusercontent.com/Syf-Almjd/flutterflow_components/master/assets/logo.png",
         description:
-            "App for fostering collaboration, knowledge sharing, and networking among IT enthusiasts.",
-        githubRepoLink:
-            "https://github.com/Syf-Almjd/ACC_Albukhary-Computing-Community",
-        googlePlay:
-            "https://play.google.com/store/apps/details?id=com.mjd.sci_acc"),
+            "A complete, open source, rapid development package for creating apps using Flutter/Dart.",
+        githubRepoLink: "https://github.com/Syf-Almjd/flutterflow_components",
+        previewLink: "https://pub.dev/packages/flutterflow_components"),
     Project(
         name: "Flutter Clean Coded",
         imageUrl:
@@ -74,6 +72,16 @@ abstract class AppConstants {
             "https://play.google.com/store/apps/details?id=com.mjd.forsan_admin",
         description:
             "A management app that can accept manage modify and delete orders coming from forsan Application."),
+    Project(
+        name: "Albukhary Computing Community",
+        imageUrl:
+            "https://play-lh.googleusercontent.com/m1My7F7HSe8B56MVXNqcO53bLXYDpIC-bC1FVsajJ6dhCa4VuXLd0BBy6_l90iinYe4I",
+        description:
+            "App for fostering collaboration, knowledge sharing, and networking among IT enthusiasts.",
+        githubRepoLink:
+            "https://github.com/Syf-Almjd/ACC_Albukhary-Computing-Community",
+        googlePlay:
+            "https://play.google.com/store/apps/details?id=com.mjd.sci_acc"),
     Project(
         name: "FoodFinder: Explore & Cook!",
         imageUrl:
@@ -95,15 +103,6 @@ abstract class AppConstants {
         description:
             "A mobile app made in Arabic that is full of functionalities to assist students in printing inquiries."),
     Project(
-        name: "Angel Tour Guide, Malaysia!",
-        imageUrl:
-            "https://play-lh.googleusercontent.com/LKm_zMpAl4swlmehcJ3FltuBz5pOsFriTbJ9hzuZh1EG2KEmQOcJepPdvreC2F0fVw=w240-h480-rw",
-        description:
-            "Enhancing the travel experience with personalized recommendations for different abilities people.",
-        googlePlay:
-            "https://play.google.com/store/apps/details?id=com.mjd.angel",
-        githubRepoLink: "https://github.com/Syf-Almjd/Angel_Tour_Guide"),
-    Project(
         name: "VACR Services",
         imageUrl:
             "https://play-lh.googleusercontent.com/jl6WOvCGNw07iLEG2I44EY6KyHBCxrenZ963e_T8K_MBmTFM1Ps_dFmWBNRnCPr3YAs=w3840-h2160-rw",
@@ -115,6 +114,15 @@ abstract class AppConstants {
         description:
             "An App developed during COVID-19 to help people request and find services they need at home."),
     Project(
+        name: "Angel Tour Guide, Malaysia!",
+        imageUrl:
+            "https://play-lh.googleusercontent.com/LKm_zMpAl4swlmehcJ3FltuBz5pOsFriTbJ9hzuZh1EG2KEmQOcJepPdvreC2F0fVw=w240-h480-rw",
+        description:
+            "Enhancing the travel experience with personalized recommendations for different abilities people.",
+        googlePlay:
+            "https://play.google.com/store/apps/details?id=com.mjd.angel",
+        githubRepoLink: "https://github.com/Syf-Almjd/Angel_Tour_Guide"),
+    Project(
         name: "AIU E-learning Web App",
         imageUrl:
             "https://play-lh.googleusercontent.com/slSd-mpVU3l_3Sfq1XG2H7aDkWegGH1llSdz8b9RKNqLDEYXvQkmgw8VzH-jaQy0P8A=w240-h480-rw",
@@ -123,22 +131,6 @@ abstract class AppConstants {
         githubRepoLink: "https://github.com/Syf-Almjd/AIU_elearning",
         description:
             "A mobile application that displays university Moodle with multiple web performance enhancements."),
-    Project(
-        name: "BMI Calculator+ Mobile App",
-        imageUrl:
-            "https://play-lh.googleusercontent.com/E32XCpDcTqjhjU3qkMECXLGSikt3m4Lz2h8D84LBfM3uV4l4Sc8K2nY8JBHqUhv-Hu4=w240-h480-rw",
-        googlePlay:
-            "https://play.google.com/store/apps/details?id=com.mjd.bmihealthy.bmihealthy",
-        githubRepoLink: "https://github.com/Syf-Almjd/BMIHealthy",
-        description:
-            "An App to help calculate the BMI and provides suggestion based on BMI and keeps track of it."),
-    Project(
-        name: "DSA Windows Text Editor",
-        imageUrl:
-            "https://www.designbombs.com/wp-content/uploads/2020/02/best-text-editors.png",
-        githubRepoLink: "https://github.com/Syf-Almjd/DSATextEditor",
-        description:
-            "A unique Text Editor that with a GUI preform operations on as a tmade with JAVA."),
     Project(
         name: "MealMaster Mobile App",
         imageUrl:
@@ -149,12 +141,28 @@ abstract class AppConstants {
             "https://play.google.com/store/apps/details?id=com.mjd.mealmaster",
         githubRepoLink: "https://github.com/Syf-Almjd/MealMaster"),
     Project(
+        name: "DSA Windows Text Editor",
+        imageUrl:
+            "https://www.designbombs.com/wp-content/uploads/2020/02/best-text-editors.png",
+        githubRepoLink: "https://github.com/Syf-Almjd/DSATextEditor",
+        description:
+            "A unique Text Editor that with a GUI preform operations on as a tmade with JAVA."),
+    Project(
+        name: "BMI Calculator+ Mobile App",
+        imageUrl:
+            "https://play-lh.googleusercontent.com/E32XCpDcTqjhjU3qkMECXLGSikt3m4Lz2h8D84LBfM3uV4l4Sc8K2nY8JBHqUhv-Hu4=w240-h480-rw",
+        googlePlay:
+            "https://play.google.com/store/apps/details?id=com.mjd.bmihealthy.bmihealthy",
+        githubRepoLink: "https://github.com/Syf-Almjd/BMIHealthy",
+        description:
+            "An App to help calculate the BMI and provides suggestion based on BMI and keeps track of it."),
+    Project(
         name: "AIU Social Business Website",
         imageUrl:
             "https://play-lh.googleusercontent.com/BcvQhTnhBJe3m-MrJ-NdlOzab7ScZ6Mq16a2ZlkNHfr9MMJxWMt8_Op_p7xSwkvTQi4=w526-h296-rw",
         previewLink: "https://aiusocialbusiness.aiu.edu.my/",
         googlePlay: "https://aiusocialbusiness.aiu.edu.my/",
         description:
-            "Developed to help technologize AIU Social Business as well as E-Commerce for SB Shops."),
+            "Developed to help technologize AIU Social Business as well as E-Commerce for SB Shops using WORDPRESS."),
   ];
 }

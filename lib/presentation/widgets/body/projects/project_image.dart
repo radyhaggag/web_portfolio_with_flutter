@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:portfolio/core/utils/app_colors.dart';
 
 class ProjectImage extends StatelessWidget {
   const ProjectImage({super.key, required this.imageUrl});
@@ -15,9 +16,10 @@ class ProjectImage extends StatelessWidget {
         width: double.infinity,
         fit: BoxFit.cover,
         errorWidget: (context, url, error) {
-          return const Icon(
-            Icons.error_outline_rounded,
-            size: 50,
+          return Icon(
+            color: AppColors.primaryColor,
+            Icons.gamepad_rounded,
+            size: 80,
           );
         },
       ),
