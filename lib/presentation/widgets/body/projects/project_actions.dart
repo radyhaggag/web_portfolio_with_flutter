@@ -21,7 +21,6 @@ class ProjectActions extends StatelessWidget {
             Expanded(
               child: CustomButton(
                 label: 'Preview',
-                textColor: AppColors.white,
                 backgroundColor: AppColors.primaryColor.withOpacity(0.5),
                 onPressed: () {
                   html.window.open(project.previewLink!, '_blank');
@@ -46,6 +45,7 @@ class ProjectActions extends StatelessWidget {
             Expanded(
               child: CustomButton(
                 label: 'Play Store',
+                textColor: AppColors.white,
                 backgroundColor: AppColors.blueColor,
                 borderColor: AppColors.primaryColor,
                 onPressed: () {
