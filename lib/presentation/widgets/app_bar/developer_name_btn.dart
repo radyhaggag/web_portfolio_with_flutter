@@ -47,6 +47,8 @@ class DeveloperNameBtn extends StatelessWidget {
                   child: Image.asset(
                 AppAssets.firebaseFlutterLogo,
                 scale: 5,
+                gaplessPlayback: true,
+                repeat: ImageRepeat.repeat,
               ))
             ],
           ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:portfolio/core/utils/app_assets.dart';
 
 import '../../blocs/theme_bloc/theme_bloc.dart';
 import '../../blocs/theme_bloc/theme_event.dart';
@@ -16,27 +17,41 @@ class _ThemeHeaderState extends State<ThemeHeader> {
   Widget build(BuildContext context) {
     return BlocBuilder<ThemeBloc, ThemeState>(
       builder: (context, state) {
-        return Visibility(
-            visible: BlocProvider.of<ThemeBloc>(context).state.themeData ==
-                ThemeState.darkTheme.themeData,
-            replacement: InkWell(
-                highlightColor: Colors.transparent,
-                splashColor: Colors.transparent,
-                hoverColor: Colors.transparent,
-                onTap: () {
-                  BlocProvider.of<ThemeBloc>(context)
-                      .add(ThemeEventChange(ThemeEventType.toggleDark));
-                },
-                child: const Icon(Icons.nightlight_outlined)),
-            child: InkWell(
-                highlightColor: Colors.transparent,
-                splashColor: Colors.transparent,
-                hoverColor: Colors.transparent,
-                onTap: () {
-                  BlocProvider.of<ThemeBloc>(context)
-                      .add(ThemeEventChange(ThemeEventType.toggleLight));
-                },
-                child: const Icon(Icons.sunny)));
+        return Stack(
+          children: [
+            Visibility(
+                visible: BlocProvider.of<ThemeBloc>(context).state.themeData ==
+                    ThemeState.darkTheme.themeData,
+                replacement: InkWell(
+                    highlightColor: Colors.transparent,
+                    splashColor: Colors.transparent,
+                    hoverColor: Colors.transparent,
+                    onTap: () {
+                      BlocProvider.of<ThemeBloc>(context)
+                          .add(ThemeEventChange(ThemeEventType.toggleDark));
+                    },
+                    child: const CircleAvatar(
+                      radius: 32, // Image radius
+                      backgroundImage: AssetImage(
+                        AppAssets.sunGif,
+                      ),
+                    )),
+                child: InkWell(
+                    highlightColor: Colors.transparent,
+                    splashColor: Colors.transparent,
+                    hoverColor: Colors.transparent,
+                    onTap: () {
+                      BlocProvider.of<ThemeBloc>(context)
+                          .add(ThemeEventChange(ThemeEventType.toggleLight));
+                    },
+                    child: const CircleAvatar(
+                      radius: 32, // Image radius
+                      backgroundImage: AssetImage(
+                        AppAssets.moonGif,
+                      ),
+                    )))
+          ],
+        );
       },
     );
   }

@@ -4,7 +4,9 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../core/utils/app_extensions.dart';
 import '../../blocs/home_bloc/home_bloc.dart';
+import '../app_bar/theme_header_btn.dart';
 import '../app_bar/vertical_headers_builder.dart';
+import 'Toasts/toasts.dart';
 import 'about_me/about_me_section.dart';
 import 'contact/contact_section.dart';
 import 'intro/intro_section.dart';
@@ -63,6 +65,7 @@ class _HomeBodyState extends State<HomeBody> {
 
   @override
   Widget build(BuildContext context) {
+    WelcomeToasts(context);
     return DelayedDisplay(
       slidingCurve: Curves.fastEaseInToSlowEaseOut,
       delay: const Duration(milliseconds: 350),
@@ -120,6 +123,13 @@ class _HomeBodyState extends State<HomeBody> {
                 slidingCurve: Curves.ease,
                 delay: Duration(milliseconds: 1000),
                 child: VerticalHeadersBuilder()),
+            const Padding(
+              padding: EdgeInsets.all(20.0),
+              child: Align(
+                alignment: Alignment.bottomRight,
+                child: ThemeHeader(),
+              ),
+            ),
           ],
         ),
       ),

@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:portfolio/core/utils/app_assets.dart';
 import 'package:portfolio/core/utils/app_colors.dart';
-import 'package:portfolio/core/utils/app_strings.dart';
-import 'package:portfolio/presentation/widgets/app_bar/theme_header_btn.dart';
-import 'package:universal_html/html.dart' as html;
 
 import '../../../core/utils/app_enums.dart';
 import '../../../core/utils/app_extensions.dart';
@@ -30,28 +28,33 @@ class VerticalHeaders extends StatelessWidget {
                 child: CustomHeaderBtn(headerIndex: index),
               ),
             ),
-            const Padding(
-              padding: EdgeInsets.all(12.0),
-              child: ThemeHeader(),
-            ),
-            InkWell(
-              hoverColor: Colors.transparent,
-              onTap: () {
-                html.window.open(AppStrings.developerResume, '_blank');
-              },
-              child: Padding(
-                padding: const EdgeInsets.all(12.0),
-                child: Container(
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(50),
-                      color: AppColors.primaryColor),
-                  child: const Padding(
-                    padding: EdgeInsets.fromLTRB(40, 10, 40, 10),
-                    child: Text(
-                      "Resume",
+            Container(
+              margin: const EdgeInsets.all(20),
+              height: MediaQuery.sizeOf(context).height * 0.05,
+              width: MediaQuery.sizeOf(context).width * 0.5,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(50),
+                  color: AppColors.primaryColor),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  const SizedBox(
+                    width: 20,
+                  ),
+                  Text(
+                    "Resume",
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold, color: AppColors.white),
+                  ),
+                  Flexible(
+                    child: Image.asset(
+                      AppAssets.resumeGif,
+                      gaplessPlayback: true,
+                      repeat: ImageRepeat.repeat,
                     ),
                   ),
-                ),
+                ],
               ),
             ),
           ]),
