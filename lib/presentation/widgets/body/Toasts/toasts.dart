@@ -24,7 +24,7 @@ class WelcomeToasts {
         context: context);
     showToast(
         time: 60,
-        title: "Looks like you still hesitated?",
+        title: "Still hesitating?",
         description: "Alright, I will keep quiet :| I hope that will help!",
         context: context);
   }

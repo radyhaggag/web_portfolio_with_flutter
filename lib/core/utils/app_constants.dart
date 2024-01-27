@@ -26,6 +26,7 @@ abstract class AppConstants {
   static const List<Project> projects = [
     Project(
         name: "Human Resources Management System",
+        previewLink: "https://taskforce-hrms.web.app/",
         imageUrl:
             "https://play-lh.googleusercontent.com/ZBiCO7NM0gSzodLvd6XLXUHQ8fyPDCRjnK05b6Ftkuc6VEUwsw9xeXr7l7KHiwAvOg=w3840-h2160-rw",
         description:
