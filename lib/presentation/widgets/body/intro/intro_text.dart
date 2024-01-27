@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/core/utils/app_assets.dart';
 
 import '../../../../core/utils/app_enums.dart';
 import '../../../../core/utils/app_extensions.dart';
@@ -17,13 +18,28 @@ class IntroText extends StatelessWidget {
           ? CrossAxisAlignment.center
           : CrossAxisAlignment.start,
       children: [
-        Text(
-          AppStrings.helloIM,
-          style: context.width < DeviceType.ipad.getMaxWidth()
-              ? AppStyles.s16
-              : AppStyles.s32,
-          textAlign: _getTextAlign(context.width),
-          softWrap: true,
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Text(
+              AppStrings.helloIM,
+              style: context.width < DeviceType.ipad.getMaxWidth()
+                  ? AppStyles.s16
+                  : AppStyles.s32,
+              textAlign: _getTextAlign(context.width),
+              softWrap: true,
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Image.asset(
+                AppAssets.flutterDev,
+                scale: 5,
+                gaplessPlayback: true,
+                repeat: ImageRepeat.repeat,
+              ),
+            )
+          ],
         ),
         const SizedBox(height: 6),
         Text(

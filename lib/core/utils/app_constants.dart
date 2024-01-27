@@ -148,6 +148,14 @@ abstract class AppConstants {
         description:
             "A unique Text Editor that with a GUI preform operations on as a tmade with JAVA."),
     Project(
+        name: "Alph MYSL: AI Sign Language",
+        imageUrl:
+            "https://raw.githubusercontent.com/Syf-Almjd/Alpha_MySL/master/assets/images/app_logo.png?token=GHSAT0AAAAAACERGB7RXVZFH5F4AL7RFN22ZNVHQQA",
+        googlePlay:
+            "https://play.google.com/store/apps/details?id=com.mjd.alpha_mysl",
+        description:
+            "An Artificial intelligence Malaysian Sign language App that converts camera input into letters with their pronunciation"),
+    Project(
         name: "BMI Calculator+ Mobile App",
         imageUrl:
             "https://play-lh.googleusercontent.com/E32XCpDcTqjhjU3qkMECXLGSikt3m4Lz2h8D84LBfM3uV4l4Sc8K2nY8JBHqUhv-Hu4=w240-h480-rw",

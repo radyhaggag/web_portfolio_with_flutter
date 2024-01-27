@@ -14,7 +14,7 @@ class ProjectsSection extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           ProjectsIntro(),
-          SizedBox(height: 52),
+          SizedBox(height: 53),
           ProjectsGrid(),
         ],
       ),

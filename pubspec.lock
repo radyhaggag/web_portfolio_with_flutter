@@ -161,6 +161,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.6"
+  delayed_display:
+    dependency: "direct main"
+    description:
+      name: delayed_display
+      sha256: "8d722bb730071b872cef2bc0b07ef20549ebd269087a16ed1c5696896246c296"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.0"
   equatable:
     dependency: "direct main"
     description:
@@ -193,30 +201,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "7.0.0"
-  firebase_core:
-    dependency: "direct main"
-    description:
-      name: firebase_core
-      sha256: "96607c0e829a581c2a483c658f04e8b159964c3bae2730f73297070bc85d40bb"
-      url: "https://pub.dev"
-    source: hosted
-    version: "2.24.2"
-  firebase_core_platform_interface:
-    dependency: transitive
-    description:
-      name: firebase_core_platform_interface
-      sha256: c437ae5d17e6b5cc7981cf6fd458a5db4d12979905f9aafd1fea930428a9fe63
-      url: "https://pub.dev"
-    source: hosted
-    version: "5.0.0"
-  firebase_core_web:
-    dependency: transitive
-    description:
-      name: firebase_core_web
-      sha256: d585bdf3c656c3f7821ba1bd44da5f13365d22fcecaf5eb75c4295246aaa83c0
-      url: "https://pub.dev"
-    source: hosted
-    version: "2.10.0"
   flutter:
     dependency: "direct main"
     description: flutter
@@ -238,62 +222,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.3.1"
-  flutter_inappwebview:
-    dependency: transitive
-    description:
-      name: flutter_inappwebview
-      sha256: "585348d7682f3a59fe6c63f895cb67d28f078815794f16d1f3943fd5b4718e20"
-      url: "https://pub.dev"
-    source: hosted
-    version: "6.0.0-beta.32"
-  flutter_inappwebview_android:
-    dependency: transitive
-    description:
-      name: flutter_inappwebview_android
-      sha256: "29d493ec6fbb11788d1d79394287f13c7c362e6862726d1c922cb1f0b7ec92c4"
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.0.8"
-  flutter_inappwebview_internal_annotations:
-    dependency: transitive
-    description:
-      name: flutter_inappwebview_internal_annotations
-      sha256: "5f80fd30e208ddded7dbbcd0d569e7995f9f63d45ea3f548d8dd4c0b473fb4c8"
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.1.1"
-  flutter_inappwebview_ios:
-    dependency: transitive
-    description:
-      name: flutter_inappwebview_ios
-      sha256: "2ed0639516a6a13209871fcc9bc21db03cb9dd8f93a6125cc6c9deb14db38ce6"
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.0.9"
-  flutter_inappwebview_macos:
-    dependency: transitive
-    description:
-      name: flutter_inappwebview_macos
-      sha256: "23aea85f9e16ce6671696c95b3eae6b53912264e18c07934ad16457c2f152ff0"
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.0.7"
-  flutter_inappwebview_platform_interface:
-    dependency: transitive
-    description:
-      name: flutter_inappwebview_platform_interface
-      sha256: b9941cb6c358f50ab4a890a6301e50a6cfca20e70408627ec34bc69fddd85ca7
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.0.6"
-  flutter_inappwebview_web:
-    dependency: transitive
-    description:
-      name: flutter_inappwebview_web
-      sha256: "6a2b5c0496f8f8260e3564d4323deccb7635368477576710e4f03879a1c4a2b7"
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.0.4"
   flutter_launcher_icons:
     dependency: "direct dev"
     description:
@@ -310,14 +238,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.3"
-  flutter_super_html_viewer:
-    dependency: "direct main"
-    description:
-      name: flutter_super_html_viewer
-      sha256: "6030608eb1a2c8465c7bf69260a84dc63974c4eae6fe2963985bba380bf1ab41"
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.1.0"
   flutter_svg:
     dependency: "direct main"
     description:
@@ -608,14 +528,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.3.2"
-  shimmer:
-    dependency: "direct main"
-    description:
-      name: shimmer
-      sha256: "1f1009b5845a1f88f1c5630212279540486f97409e9fc3f63883e71070d107bf"
-      url: "https://pub.dev"
-    source: hosted
-    version: "2.0.0"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -725,70 +637,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.2.2"
-  url_launcher:
-    dependency: transitive
-    description:
-      name: url_launcher
-      sha256: e9aa5ea75c84cf46b3db4eea212523591211c3cf2e13099ee4ec147f54201c86
-      url: "https://pub.dev"
-    source: hosted
-    version: "6.2.2"
-  url_launcher_android:
-    dependency: transitive
-    description:
-      name: url_launcher_android
-      sha256: "31222ffb0063171b526d3e569079cf1f8b294075ba323443fdc690842bfd4def"
-      url: "https://pub.dev"
-    source: hosted
-    version: "6.2.0"
-  url_launcher_ios:
-    dependency: transitive
-    description:
-      name: url_launcher_ios
-      sha256: bba3373219b7abb6b5e0d071b0fe66dfbe005d07517a68e38d4fc3638f35c6d3
-      url: "https://pub.dev"
-    source: hosted
-    version: "6.2.1"
-  url_launcher_linux:
-    dependency: transitive
-    description:
-      name: url_launcher_linux
-      sha256: ab360eb661f8879369acac07b6bb3ff09d9471155357da8443fd5d3cf7363811
-      url: "https://pub.dev"
-    source: hosted
-    version: "3.1.1"
-  url_launcher_macos:
-    dependency: transitive
-    description:
-      name: url_launcher_macos
-      sha256: b7244901ea3cf489c5335bdacda07264a6e960b1c1b1a9f91e4bc371d9e68234
-      url: "https://pub.dev"
-    source: hosted
-    version: "3.1.0"
-  url_launcher_platform_interface:
-    dependency: transitive
-    description:
-      name: url_launcher_platform_interface
-      sha256: "980e8d9af422f477be6948bdfb68df8433be71f5743a188968b0c1b887807e50"
-      url: "https://pub.dev"
-    source: hosted
-    version: "2.2.0"
-  url_launcher_web:
-    dependency: transitive
-    description:
-      name: url_launcher_web
-      sha256: "7286aec002c8feecc338cc33269e96b73955ab227456e9fb2a91f7fab8a358e9"
-      url: "https://pub.dev"
-    source: hosted
-    version: "2.2.2"
-  url_launcher_windows:
-    dependency: transitive
-    description:
-      name: url_launcher_windows
-      sha256: ecf9725510600aa2bb6d7ddabe16357691b6d2805f66216a97d1b881e21beff7
-      url: "https://pub.dev"
-    source: hosted
-    version: "3.1.1"
   uuid:
     dependency: transitive
     description:
@@ -837,14 +685,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.3.0"
-  webview_windows:
-    dependency: transitive
-    description:
-      name: webview_windows
-      sha256: a6d76f9f020e638c2e5417f473e2907c097d1fe3eac8bd4be7517bc3a0df6b86
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.2.2"
   win32:
     dependency: transitive
     description:
