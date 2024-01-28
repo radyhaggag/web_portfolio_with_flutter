@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/presentation/widgets/body/contact/contactMePersonally.dart';
 import 'package:portfolio/presentation/widgets/body/contact/social_medial_icons.dart';
 
 import '../../../../core/utils/app_strings.dart';
@@ -24,8 +25,10 @@ class ContactIntro extends StatelessWidget {
           style: AppStyles.s18,
           softWrap: true,
         ),
-        const SizedBox(height: 8),
+        const SizedBox(height: 10),
         const SocialMediaIcons(),
+        const SizedBox(height: 20),
+        const ContactMePersonally(),
       ],
     );
   }

@@ -2,7 +2,6 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/utils/app_colors.dart';
-import '../../../../core/utils/app_styles.dart';
 import '../../../../data/models/project.dart';
 import 'project_actions.dart';
 import 'project_image.dart';
@@ -16,9 +15,9 @@ class ProjectItem extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(8),
-        color: AppColors.primaryLight,
-      ),
+          borderRadius: BorderRadius.circular(20),
+          color: Colors.transparent,
+          border: Border.all(color: AppColors.primaryColor, width: 3)),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -27,15 +26,15 @@ class ProjectItem extends StatelessWidget {
           FittedBox(
             child: Text(
               project.name,
-              style: AppStyles.s24.copyWith(color: AppColors.primaryColor),
+              textAlign: TextAlign.center,
+              style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
             ),
           ),
           const SizedBox(height: 8),
           Expanded(
             child: AutoSizeText(
               project.description,
-              style: AppStyles.s18,
-              minFontSize: 12,
+              minFontSize: 14,
               maxLines: 4,
             ),
           ),

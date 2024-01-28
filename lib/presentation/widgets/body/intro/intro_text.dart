@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/core/utils/app_assets.dart';
 
-import '../../../../core/utils/app_colors.dart';
 import '../../../../core/utils/app_enums.dart';
 import '../../../../core/utils/app_extensions.dart';
 import '../../../../core/utils/app_strings.dart';
 import '../../../../core/utils/app_styles.dart';
+import '../contact/social_medial_icons.dart';
 import 'intro_actions.dart';
 
 class IntroText extends StatelessWidget {
@@ -17,13 +18,28 @@ class IntroText extends StatelessWidget {
           ? CrossAxisAlignment.center
           : CrossAxisAlignment.start,
       children: [
-        Text(
-          AppStrings.helloIM,
-          style: context.width < DeviceType.ipad.getMaxWidth()
-              ? AppStyles.s16
-              : AppStyles.s32.copyWith(color: AppColors.white),
-          textAlign: _getTextAlign(context.width),
-          softWrap: true,
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Text(
+              AppStrings.helloIM,
+              style: context.width < DeviceType.ipad.getMaxWidth()
+                  ? AppStyles.s16
+                  : AppStyles.s32,
+              textAlign: _getTextAlign(context.width),
+              softWrap: true,
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Image.asset(
+                AppAssets.flutterDev,
+                scale: 5,
+                gaplessPlayback: true,
+                repeat: ImageRepeat.repeat,
+              ),
+            )
+          ],
         ),
         const SizedBox(height: 6),
         Text(
@@ -50,6 +66,12 @@ class IntroText extends StatelessWidget {
         ),
         const SizedBox(height: 30),
         const IntoActions(),
+        const SizedBox(height: 30),
+        SizedBox(
+            width: context.width < DeviceType.mobile.getMaxWidth()
+                ? context.width - 20
+                : context.width / 2.5,
+            child: const SocialMediaIcons()),
       ],
     );
   }

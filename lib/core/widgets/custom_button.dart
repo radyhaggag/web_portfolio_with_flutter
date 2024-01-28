@@ -1,9 +1,6 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 
-import '../utils/app_colors.dart';
-import '../utils/app_styles.dart';
-
 class CustomButton extends StatelessWidget {
   const CustomButton({
     super.key,
@@ -14,11 +11,13 @@ class CustomButton extends StatelessWidget {
     this.borderColor,
     this.onPressed,
     this.width,
+    this.textColor,
   });
 
   final Function()? onPressed;
   final Color? backgroundColor;
   final Color? borderColor;
+  final Color? textColor;
   final double? height;
   final IconData? icon;
   final String label;
@@ -41,7 +40,11 @@ class CustomButton extends StatelessWidget {
             Flexible(
               child: AutoSizeText(
                 label,
-                style: AppStyles.s16,
+                style: TextStyle(
+                  color: textColor ?? Theme.of(context).colorScheme.primary,
+                  fontSize: 14,
+                  fontWeight: FontWeight.w600,
+                ),
                 textAlign: TextAlign.center,
                 minFontSize: 8,
                 maxLines: 1,
@@ -52,7 +55,6 @@ class CustomButton extends StatelessWidget {
               Icon(
                 icon,
                 size: 18,
-                color: AppColors.white,
               ),
             ]
           ],

@@ -25,7 +25,6 @@ class ChangeAppBarHeadersAxis extends HomeEvent {
 
 class ChangeAppBarHeadersColorByColor extends HomeEvent {
   final int index;
-
   ChangeAppBarHeadersColorByColor(this.index);
 
   @override

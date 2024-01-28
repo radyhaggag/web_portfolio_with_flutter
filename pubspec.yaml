@@ -1,5 +1,5 @@
 name: portfolio
-description: A new Flutter project.
+description: SaifAlmajd Portfolio and Resume!
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -11,16 +11,18 @@ environment:
 
 dependencies:
   auto_size_text: ^3.0.0
-  cached_network_image: ^3.2.3
-  cupertino_icons: ^1.0.2
+  cached_network_image: ^3.3.0
+  cupertino_icons: ^1.0.6
   equatable: ^2.0.5
+  adaptive_theme: ^3.4.1
   flutter:
     sdk: flutter
   flutter_bloc: ^8.1.2
   flutter_svg: ^2.0.2
   font_awesome_flutter: ^10.4.0
-  shimmer: ^2.0.0
+  delayed_display: ^2.0.0
   universal_html: ^2.0.9
+  toastification: ^1.1.0
 
 dev_dependencies:
   flutter_lints: ^2.0.0
@@ -45,6 +47,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/
+    - assets/previews/
 
   fonts:
     - family: Poppins

@@ -1,6 +1,6 @@
+import 'package:delayed_display/delayed_display.dart';
 import 'package:flutter/material.dart';
 
-import '../../../core/utils/app_colors.dart';
 import '../../../core/utils/app_constants.dart';
 import '../../../core/utils/app_enums.dart';
 import '../../../core/utils/app_extensions.dart';
@@ -16,19 +16,22 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: AppColors.appBarColor,
-      padding: EdgeInsets.symmetric(
-        horizontal: _getHorizontalPadding(context),
-      ),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          const DeveloperNameBtn(),
-          context.width > DeviceType.ipad.getMaxWidth()
-              ? const HorizontalHeaders()
-              : const CustomMenuBtn()
-        ],
+    return DelayedDisplay(
+      slidingCurve: Curves.fastEaseInToSlowEaseOut,
+      delay: const Duration(milliseconds: 350),
+      child: Container(
+        padding: EdgeInsets.symmetric(
+          horizontal: _getHorizontalPadding(context),
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            const DeveloperNameBtn(),
+            context.width > DeviceType.ipad.getMaxWidth()
+                ? const HorizontalHeaders()
+                : const CustomMenuBtn()
+          ],
+        ),
       ),
     );
   }

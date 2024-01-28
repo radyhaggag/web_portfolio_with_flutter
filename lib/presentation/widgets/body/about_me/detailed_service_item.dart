@@ -18,7 +18,7 @@ class DetailedServiceItem extends StatefulWidget {
 }
 
 class _DetailedServiceItemState extends State<DetailedServiceItem> {
-  Color itemColor = AppColors.white;
+  Color itemColor = AppColors.lowPriority;
 
   @override
   Widget build(BuildContext context) {
@@ -71,7 +71,7 @@ class _DetailedServiceItemState extends State<DetailedServiceItem> {
   }
 
   void _onExit(event) {
-    setState(() => itemColor = AppColors.white);
+    setState(() => itemColor = AppColors.lowPriority);
   }
 
   void _onEnter(event) {
