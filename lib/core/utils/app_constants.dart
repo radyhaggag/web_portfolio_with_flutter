@@ -85,6 +85,7 @@ abstract class AppConstants {
             "https://play.google.com/store/apps/details?id=com.mjd.sci_acc"),
     Project(
         name: "FoodFinder: Explore & Cook!",
+        previewLink: "https://foodfinder-plus.web.app/",
         imageUrl:
             "https://play-lh.googleusercontent.com/gLz02GkvIgswJQ-cWlJxZZ6f39NAziLLPzuKf_NyX6QqcmX6iCAwKucFTjQ4hdQy_y8=w240-h480-rw",
         description:

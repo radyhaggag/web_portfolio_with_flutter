@@ -44,7 +44,7 @@ class WelcomeToasts {
               primaryColor: AppColors.primaryColor,
               dragToClose: true,
               showProgressBar: true,
-              icon: const Icon(Icons.info_outlined),
+              icon: const Icon(Icons.reddit_outlined),
               autoCloseDuration: const Duration(seconds: 5),
             ));
   }

@@ -10,21 +10,27 @@ class ProjectImage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Flexible(
       flex: 2,
-      fit: FlexFit.tight,
       child: ClipRRect(
         clipBehavior: Clip.antiAliasWithSaveLayer,
         borderRadius: BorderRadius.circular(20),
-        child: CachedNetworkImage(
-          imageUrl: imageUrl,
-          width: double.infinity,
-          fit: BoxFit.fill,
-          errorWidget: (context, url, error) {
-            return Icon(
-              color: AppColors.primaryColor,
-              Icons.gamepad_rounded,
-              size: 80,
-            );
-          },
+        child: Container(
+          color: Colors.white,
+          child: CachedNetworkImage(
+            imageUrl: imageUrl,
+            fadeInDuration: const Duration(seconds: 1),
+            width: double.infinity,
+            fit: BoxFit.fitHeight,
+            errorWidget: (context, url, error) {
+              return Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: Icon(
+                  color: AppColors.primaryColor,
+                  Icons.gamepad_rounded,
+                  size: 120,
+                ),
+              );
+            },
+          ),
         ),
       ),
     );
